@@ -1,3 +1,39 @@
+# Mini-Medallion
+
+A research harness built to **kill trading hypotheses honestly**: frozen data
+snapshots, a block-bootstrap null that sets the bar a real result must clear,
+TRAIN → VALIDATION → a single look at TEST, a cost model, and every experiment
+logged. No broker, no orders.
+
+## Results at a glance
+
+| Milestone | Question | Verdict |
+|---|---|---|
+| M0 | Is there any return edge in SPY / SCHD / TLT / IWM? | `NO ROBUST EDGE` — 98 hypotheses, 1 cleared the null, **0 passed** |
+| M1 | Does a better volatility forecast improve position sizing? | `NO USEFUL IMPROVEMENT` — survives in 2 of 16 cells, both on one instrument |
+| M2 | Why does a more accurate forecast give a worse decision? | `GAP_UNDERPOWERED` — the gap is too small to explain |
+| M4 | What could this apparatus have detected at all? | `CONCLUDE` — see below |
+
+**The decisive number.** On 2,399 return observations, the smallest effect detectable
+with 84% power is IC = **0.080** even for a single pre-registered hypothesis
+(0.163 for all 1,268 trials ever run). Every realistic return effect sits below
+that floor: short-term reversal 0.056, the SPY overnight premium 0.036, 12−1
+momentum 0.024. On this data a return edge of realistic size is invisible, which
+is why the programme concluded instead of continuing to search.
+
+**Where it did have power** (volatility, baseline R² ≈ 0.49), two textbook effects
+cleared the bar: volatility persistence (IC 0.160) and implied volatility adding
+information over historical (IC 0.190, t = 14.13; four artefact explanations
+tested and rejected).
+
+![Real results vs. the null distribution](results/figures/real_vs_null.png)
+![Minimum detectable effect vs. number of hypotheses](results/figures/q1_mde_curve.png)
+
+Full write-up for a reader who has seen none of the milestones:
+[results/PROGRAM_SUMMARY.md](results/PROGRAM_SUMMARY.md). The milestone log follows.
+
+---
+
 # MINI-MEDALLION — Milestone 0
 
 Research harness. **No broker, no orders, no execution engine, no profit optimisation.**
