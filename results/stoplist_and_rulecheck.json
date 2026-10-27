@@ -1,0 +1,66 @@
+{
+  "burned_questions": [
+    {
+      "question_id": "BQ-1",
+      "question": "Any comparison of HAR versus HAR+log(VIX) by Sharpe (or by any statistic derived from the realised P&L difference) on SPY, SCHD, TLT or IWM",
+      "instruments": "SPY, SCHD, TLT, IWM",
+      "period": "2021-01-01 onwards",
+      "burned_by": "scripts/p1_decomposition.py (superseded M2, access NOT logged at the time)",
+      "burned_when": "2026-08-30",
+      "reason": "The TEST-period delta Sharpe of exactly this pair was computed and printed for all four instruments. The numbers are in test_exposure_ledger row M2sup-1. This is the first and hardest entry: the quantity itself was seen, not a summary of it.",
+      "still_askable_variant": "The same question on instruments outside this panel, or on this panel with a genuinely held-out future period (data after 2026-08-29, which did not exist at the time of the access)."
+    },
+    {
+      "question_id": "BQ-2",
+      "question": "Model selection among HAR-plus-one-candidate variants judged by out-of-sample Sharpe on this panel",
+      "instruments": "SPY, SCHD, TLT, IWM",
+      "period": "2021-01-01 onwards",
+      "burned_by": "scripts/p4_test_and_report.py (superseded M2 selector race B)",
+      "burned_when": "2026-08-30",
+      "reason": "TEST Sharpe of 23 models per instrument was computed, together with the random-choice, oracle and baseline reference lines.",
+      "still_askable_variant": "Selection judged on a future period, or on a different candidate family."
+    },
+    {
+      "question_id": "BQ-3",
+      "question": "Whether any M0 feature family (pair mean reversion, Avellaneda-Lee residual, cross-asset volatility, IWM/SPY regime) has predictive power",
+      "instruments": "M0 universe",
+      "period": "2021-01-01 onwards",
+      "burned_by": "scripts/m5_search.py (M0, single scheduled access)",
+      "burned_when": "2026-08-29",
+      "reason": "All 98 hypotheses were evaluated on TEST in one pass, by design.",
+      "still_askable_variant": "New feature families on the same panel; the same families on new data."
+    },
+    {
+      "question_id": "BQ-4",
+      "question": "Whether vol targeting improves on buy-and-hold for these instruments",
+      "instruments": "SPY, SCHD, TLT, IWM",
+      "period": "2021-01-01 onwards",
+      "burned_by": "scripts/n5_test_and_report.py (M1, single scheduled access)",
+      "burned_when": "2026-08-29",
+      "reason": "16 strategies and 255 incremental candidates evaluated on TEST in one pass, by design.",
+      "still_askable_variant": "The same question on new data, or a materially different decision rule (different sizing law, not a different parameter of the same one)."
+    }
+  ],
+  "n5_rule_check": {
+    "rows_applied_to": 16,
+    "exemptions": 0,
+    "n_pass_old": 5,
+    "n_pass_new": 2,
+    "direction": "weaker",
+    "dropped": [
+      "SPY_HAR_cap1.0",
+      "SPY_HAR+log_vix_cap1.0",
+      "SPY_HAR+log_vix_cap1.5"
+    ],
+    "kept": [
+      "TLT_HAR+log_vix_cap1.0",
+      "TLT_HAR+log_vix_cap1.5"
+    ],
+    "kept_vix_augmented": 2,
+    "kept_plain_har": 0,
+    "self_serving": false,
+    "threshold_is_natural_zero": true,
+    "closest_row_to_cut": 0.0383203574231787,
+    "conclusion": "The tightening was applied to all 16 rows with no exemption, moved the claim from 5/16 to 2/16, sits at a natural zero rather than in a gap between rows, and the only survivors are VIX-augmented -- which contradicts M1's own headline. Not counting it as a trial is defensible."
+  }
+}

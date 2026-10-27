@@ -1,0 +1,66 @@
+{
+  "master_seed": 20260829,
+  "n_replications": 1000,
+  "n_tests_per_replication": 98,
+  "mean_block": 20,
+  "bootstrap": "stationary block bootstrap (Politis-Romano), per-series independent",
+  "seconds_per_replication": 0.3123,
+  "total_seconds": 278.1,
+  "estimator_fingerprint": {
+    "stats_engine.py": "15604758fbfc26b7",
+    "discovery.py": "31edc4e0e3d48313",
+    "features.py": "ddbeb0aca181e9dc",
+    "targets.py": "c383f63cfdaf99fd",
+    "panel.py": "b04054df72ed888b",
+    "config.py": "925e0b6d83ccc027",
+    "_joint": "23a37efddce50a20"
+  },
+  "seed_derivation": "master_seed + replication_id*1000003 + crc32(series_name), mod 2^31-1",
+  "percentiles": {
+    "max_abs_t_stat_nw": {
+      "n_finite": 1000,
+      "mean": 4.014131175980393,
+      "median": 3.903884084629751,
+      "max": 7.8547230080237505,
+      "p90": 5.488554644517155,
+      "p95": 5.913090639281712,
+      "p99": 6.906845398863046
+    },
+    "max_abs_ic": {
+      "n_finite": 1000,
+      "mean": 0.18761423155366333,
+      "median": 0.1807367451927434,
+      "max": 0.4284118539181488,
+      "p90": 0.2664856178590551,
+      "p95": 0.2915767977798097,
+      "p99": 0.3484302428802947
+    },
+    "max_sharpe": {
+      "n_finite": 1000,
+      "mean": 0.6157121537469966,
+      "median": 0.601196961802883,
+      "max": 1.432253337172297,
+      "p90": 0.8492041550939473,
+      "p95": 0.9433071799169626,
+      "p99": 1.1116196962803746
+    },
+    "max_net_sharpe": {
+      "n_finite": 1000,
+      "mean": 0.5913358849909285,
+      "median": 0.579680805533102,
+      "max": 1.3871253166880497,
+      "p90": 0.8258639935886993,
+      "p95": 0.9051863637968706,
+      "p99": 1.0638522515985287
+    },
+    "max_abs_t_val_selected": {
+      "n_finite": 1000,
+      "mean": 2.1671069776262666,
+      "median": 1.9848463191638253,
+      "max": 8.056384468386074,
+      "p90": 4.069981714752016,
+      "p95": 4.69362592232869,
+      "p99": 5.593200246551473
+    }
+  }
+}

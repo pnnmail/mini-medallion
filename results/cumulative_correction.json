@@ -1,0 +1,91 @@
+{
+  "K_cumulative": 1268,
+  "arithmetic": {
+    "98": {
+      "sqrt_2lnK": 3.028190046437169,
+      "exact_max_abs_z_p95": 3.468555715516102
+    },
+    "200": {
+      "sqrt_2lnK": 3.2552472614374586,
+      "exact_max_abs_z_p95": 3.6557475788147444
+    },
+    "255": {
+      "sqrt_2lnK": 3.3290429691304455,
+      "exact_max_abs_z_p95": 3.717593013658565
+    },
+    "1268": {
+      "sqrt_2lnK": 3.7802635185915734,
+      "exact_max_abs_z_p95": 4.104886711006591
+    }
+  },
+  "per_family": [
+    {
+      "family": "M0 search",
+      "K_local": 98,
+      "n_obs": 2399,
+      "threshold_local_empirical": 5.913090639281712,
+      "c_normal_local": 3.468555715516102,
+      "inflation_lambda": 1.704770262974391,
+      "c_normal_cumulative": 4.104886711006591,
+      "threshold_cumulative": 6.997888797802789,
+      "increase_pct": 18.345704889327585,
+      "mde_ic_local": 0.12072561103165583,
+      "mde_ic_cumulative": 0.1428735753573609
+    },
+    {
+      "family": "M1 incremental",
+      "K_local": 255,
+      "n_obs": 2517,
+      "threshold_local_empirical": 4.443677683503955,
+      "c_normal_local": 3.717593013658565,
+      "inflation_lambda": 1.1953104245617339,
+      "c_normal_cumulative": 4.104886711006591,
+      "threshold_cumulative": 4.906613877311107,
+      "increase_pct": 10.417861662777383,
+      "mde_ic_local": 0.08857291597394971,
+      "mde_ic_cumulative": 0.09780031983080384
+    },
+    {
+      "family": "M2 N6 grid",
+      "K_local": 49,
+      "n_obs": 1259,
+      "threshold_local_empirical": 3.2755690165874016,
+      "c_normal_local": 3.2777840027449185,
+      "inflation_lambda": 0.9993242427946253,
+      "c_normal_cumulative": 4.104886711006591,
+      "threshold_cumulative": 4.102112804234381,
+      "increase_pct": 25.233594024774987,
+      "mde_ic_local": 0.09231534337831324,
+      "mde_ic_cumulative": 0.11560982234897381
+    }
+  ],
+  "verdicts": [
+    {
+      "family": "M0 search",
+      "observed_max_abs_t": 5.944913303042625,
+      "threshold_local": 5.913090639281712,
+      "beats_local": true,
+      "threshold_cumulative": 6.997888797802789,
+      "beats_cumulative": false
+    },
+    {
+      "family": "M1 incremental",
+      "observed_max_abs_t": 14.132277247877358,
+      "threshold_local": 4.443677683503955,
+      "beats_local": true,
+      "threshold_cumulative": 4.906613877311107,
+      "beats_cumulative": true
+    },
+    {
+      "family": "M2 N6 grid",
+      "observed_max_abs_t": 2.848866220258867,
+      "threshold_local": 3.2755690165874016,
+      "beats_local": false,
+      "threshold_cumulative": 4.102112804234381,
+      "beats_cumulative": false
+    }
+  ],
+  "n_verdicts_changed": 1,
+  "decision": "PAID. Thresholds are now reported at the cumulative K = 1268, not per milestone. The caveat 'no finding survived a cumulative correction' is withdrawn as empty: it was true but carried no information, because nothing survived the local correction either. Paying it costs 18% on the threshold and changes 1 verdicts.",
+  "supersedes": "audit_disclosure.json -> cumulative_decision"
+}

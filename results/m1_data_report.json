@@ -1,0 +1,91 @@
+{
+  "m1_snapshot": {
+    "tickers": {
+      "SPY_EXT": {
+        "key": "SPY_EXT",
+        "yf_ticker": "SPY",
+        "source": "yfinance",
+        "download_timestamp": "2026-08-29T20:54:37",
+        "first_date": "1993-01-29",
+        "last_date": "2026-08-28",
+        "row_count": 8453,
+        "columns": [
+          "open",
+          "high",
+          "low",
+          "close",
+          "adj_close",
+          "volume"
+        ]
+      },
+      "VIX": {
+        "key": "VIX",
+        "yf_ticker": "^VIX",
+        "source": "yfinance",
+        "download_timestamp": "2026-08-29T20:54:37",
+        "first_date": "1990-01-02",
+        "last_date": "2026-08-28",
+        "row_count": 9233,
+        "columns": [
+          "open",
+          "high",
+          "low",
+          "close",
+          "adj_close",
+          "volume"
+        ]
+      },
+      "T10Y2Y_EXT": {
+        "key": "T10Y2Y_EXT",
+        "source": "FRED",
+        "download_timestamp": "2026-08-29T20:54:37",
+        "first_date": "1990-01-01",
+        "last_date": "2026-08-28",
+        "row_count": 9565
+      }
+    },
+    "snapshot_date": "2026-08-29"
+  },
+  "spy_extended": {
+    "first_date": "1993-01-29",
+    "last_date": "2026-08-28",
+    "rows": 8453,
+    "declared_extended_train_start": "1993-01-29",
+    "overlap_with_m0_consistent": true,
+    "max_relative_diff_on_overlap": 1.2564777212943282e-06
+  },
+  "vix": {
+    "first_date": "1990-01-02",
+    "last_date": "2026-08-28",
+    "rows": 9233,
+    "min": 9.140000343322754,
+    "max": 82.69000244140625,
+    "n_nan": 0
+  },
+  "t10y2y_extended": {
+    "first_date": "1990-01-01",
+    "rows": 9565
+  },
+  "calendar_flags": {
+    "is_opex": 320,
+    "is_nfp_friday": 320,
+    "is_month_end3": 960,
+    "is_quarter_end3": 321
+  },
+  "calendar_omissions": {
+    "FOMC": "not included -- no verifiable, freezable list of the ~160 scheduled meeting dates over 1993-2026 was obtainable inside the frozen-data constraint, and there is no deterministic rule to derive them. Writing dates from memory would inject fabricated data into a milestone whose entire point is not trusting unverified inputs.",
+    "CPI": "not included -- same reason. BLS release dates vary within the month and follow no rule recomputable from the index.",
+    "consequence": "candidate family 5 (calendar) is therefore tested on OPEX, month-end, quarter-end and the first-Friday NFP convention only. This is a REDUCED version of the specified family and is reported as such, not as the full test."
+  },
+  "removed_features": {
+    "pair_GDX_GLD": "half-life 1135d vs a 60d admissibility threshold; operating leverage produces correlation, not mean reversion",
+    "pair_XOP_XLE": "half-life 449d vs a 60d admissibility threshold; same reason",
+    "corwin_schultz_as_level_estimator": "45-65% negative daily estimates on liquid ETFs; cross-ticker correlation +0.945 with volatility vs +0.118 with log ADV. Built for quote-less illiquid names; an ETF with billions of ADV has nothing for it to estimate"
+  },
+  "vol_targets": [
+    "SPY",
+    "SCHD",
+    "TLT",
+    "IWM"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "n_tests": 98,
+  "n_beats_null_p95": 1,
+  "n_beats_null_p99": 0,
+  "n_fdr_rejected": 56,
+  "n_passed": 0,
+  "status_counts": {
+    "FAILED_NULL": 97,
+    "FAILED_OOS": 1
+  },
+  "observed_max_abs_t_train": 5.944913303042625,
+  "observed_max_abs_ic_train": 0.3143371888664954,
+  "observed_max_net_sharpe_train": 0.434157611406848,
+  "null_thresholds_used": {
+    "t_p95": 5.913090639281712,
+    "t_p99": 6.906845398863046,
+    "ic_p95": 0.2915767977798097,
+    "net_sharpe_p95": 0.9051863637968706,
+    "val_t_p95": 4.69362592232869
+  },
+  "deflated_sharpe_trial_variance": 9.244216561424643e-05,
+  "n_trials_for_dsr": 98,
+  "bh_alpha": 0.1,
+  "min_p_bootstrap": 0.0005,
+  "min_p_bh_adjusted": 0.0098
+}

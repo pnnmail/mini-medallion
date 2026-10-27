@@ -1,0 +1,14 @@
+{
+  "post_hoc": true,
+  "cannot_change_status": true,
+  "candidate": "rvol_TLT_10_lag0__fwdrvol5",
+  "n_train": 2138,
+  "t_univariate_TLT": 5.944913303042625,
+  "ic_univariate_TLT": 0.28389259561265007,
+  "t_univariate_SPY_own_vol": 7.403989526367812,
+  "ic_univariate_SPY_own_vol": 0.40705813089739445,
+  "t_TLT_controlling_for_SPY_vol": 1.5926123315809766,
+  "t_SPY_controlling_for_TLT_vol": 6.114105545061823,
+  "spearman_between_regressors": 0.5153093756309975,
+  "conclusion": "The cross-asset reading of this hypothesis does not survive the obvious control. SPY's own realised volatility predicts SPY's forward volatility with t = +7.40; adding TLT volatility moves its own t from +5.94 to +1.59. What the search found is volatility clustering in SPY, reached through a correlated proxy -- not a TLT-to-SPY spillover."
+}

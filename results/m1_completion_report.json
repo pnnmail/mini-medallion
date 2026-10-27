@@ -1,0 +1,388 @@
+{
+  "verdict": "NO USEFUL IMPROVEMENT AS A GENERAL RESULT -- it survives in only 2/16 strategies, all on TLT",
+  "completion_gate": {
+    "dead pairs removed from the search space, recorded in the log": true,
+    "calibration rewritten to volatility persistence, |t| > 5 on every instrument (9/9, weakest SCHD t=14.5)": true,
+    "four RV estimators implemented and compared; choice justified by accuracy (chosen: gk)": true,
+    "HAR-RV implemented, beats naive on QLIKE on VALIDATION (27/27 cells)": true,
+    "incremental framework: no candidate evaluated outside a regression that contains the baseline": true,
+    "Romano-Wolf implemented; the BH gap recorded as a calibration diagnostic (128 BH vs 87 RW on TRAIN)": true,
+    "TLT->SPY retested correctly and died (0/51 of the cross-asset family rejected, max |t| = 2.82)": true,
+    "vol targeting with a +-20% band, both caps [1.0, 1.5], turnover measured": true,
+    "three matched-risk comparisons built (vol, exposure, drawdown)": true,
+    "leave-one-crisis-out built; contribution of the top-5 episodes shown": true,
+    "execution costs and short-term gain turnover reported separately": true,
+    "TEST opened exactly once (1)": true,
+    "final table contains every model tested (255 incremental + 16 strategies = 271)": true
+  },
+  "all_gates_passed": true,
+  "n_incremental_models": 255,
+  "n_incremental_passed": 30,
+  "passed_by_family": {
+    "vix": 23,
+    "asymmetry": 7
+  },
+  "n_strategies": 16,
+  "n_strategies_passed": 5,
+  "n_strategies_robust_to_crisis_removal": 2,
+  "robust_strategies": [
+    "TLT_HAR+log_vix_cap1.0",
+    "TLT_HAR+log_vix_cap1.5"
+  ],
+  "strategy_status_counts": {
+    "FAILED_CRISIS_DEPENDENCE": 8,
+    "PASSED": 5,
+    "FAILED_OOS": 3
+  },
+  "model_status_counts": {
+    "FAILED_NULL": 168,
+    "FAILED_OOS": 57,
+    "PASSED": 30
+  },
+  "vix_worsens_sizing_dev_all_pre_test_data": 8,
+  "vix_worsens_sizing_full_sample": 4,
+  "n_strategies_advantage_gone_ex_crises": 12,
+  "episode_coverage": {
+    "SPY": {
+      "decline_leg_share_of_sample": 0.16618873826903025,
+      "peak_to_recovery_share_of_sample": 0.47249739311783107
+    },
+    "SCHD": {
+      "decline_leg_share_of_sample": 0.16790792146242384,
+      "peak_to_recovery_share_of_sample": 0.44414353419092756
+    },
+    "TLT": {
+      "decline_leg_share_of_sample": 0.26968238691049085,
+      "peak_to_recovery_share_of_sample": 0.7459095283926853
+    },
+    "IWM": {
+      "decline_leg_share_of_sample": 0.22252165543792107,
+      "peak_to_recovery_share_of_sample": 0.5282001924927815
+    }
+  },
+  "bh_vs_harness_gap_train": 41,
+  "calibration": {
+    "gate": "PASSED",
+    "estimator": "gk",
+    "weakest_t": 14.487333503173263
+  },
+  "har_gate": {
+    "rule": "HAR-RV must beat the naive forecast on QLIKE on VALIDATION for every instrument",
+    "cells_passed": 27,
+    "cells_total": 27,
+    "passed": true
+  },
+  "har_vs_harder_benchmarks": {
+    "naive_gk": {
+      "beaten_cells": 21,
+      "total_cells": 27,
+      "by_horizon": {
+        "1": [
+          3,
+          9
+        ],
+        "5": [
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9
+        ]
+      }
+    },
+    "ma20_gk": {
+      "beaten_cells": 19,
+      "total_cells": 27,
+      "by_horizon": {
+        "1": [
+          1,
+          9
+        ],
+        "5": [
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9
+        ]
+      }
+    },
+    "ewma94_gk": {
+      "beaten_cells": 19,
+      "total_cells": 27,
+      "by_horizon": {
+        "1": [
+          1,
+          9
+        ],
+        "5": [
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9
+        ]
+      }
+    }
+  },
+  "cross_asset_verification": {
+    "n": 51,
+    "n_rejected": 0,
+    "max_abs_t": 2.8158175287543776
+  },
+  "scope_limitation_calendar": {
+    "FOMC": "not included -- no verifiable, freezable list of the ~160 scheduled meeting dates over 1993-2026 was obtainable inside the frozen-data constraint, and there is no deterministic rule to derive them. Writing dates from memory would inject fabricated data into a milestone whose entire point is not trusting unverified inputs.",
+    "CPI": "not included -- same reason. BLS release dates vary within the month and follow no rule recomputable from the index.",
+    "consequence": "candidate family 5 (calendar) is therefore tested on OPEX, month-end, quarter-end and the first-Friday NFP convention only. This is a REDUCED version of the specified family and is reported as such, not as the full test."
+  },
+  "experiments_logged": 37,
+  "post_hoc_iterations": 2,
+  "test_accesses_m1": 1,
+  "experiment_ledger": [
+    {
+      "milestone": "M0",
+      "description": "frozen data snapshot + integrity report",
+      "n_tests": 0,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M0",
+      "description": "frozen data snapshot + integrity report",
+      "n_tests": 0,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M1",
+      "description": "search space frozen; look-ahead + target tests passed",
+      "n_tests": 98,
+      "status": "PASSED"
+    },
+    {
+      "milestone": "M2",
+      "description": "null harness on block-bootstrapped synthetic data",
+      "n_tests": 98000,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M3",
+      "description": "calibration on known effects (TRAIN only)",
+      "n_tests": 51,
+      "status": "PASSED"
+    },
+    {
+      "milestone": "M3",
+      "description": "calibration on known effects (TRAIN only)",
+      "n_tests": 51,
+      "status": "PASSED"
+    },
+    {
+      "milestone": "M4",
+      "description": "Corwin-Schultz cost model + anchor validation",
+      "n_tests": 3101,
+      "status": "ANCHOR_MISMATCH"
+    },
+    {
+      "milestone": "M4",
+      "description": "spread estimators + anchor validation",
+      "n_tests": 33,
+      "status": "ANCHOR_FAILED_ESTIMATOR_REJECTED"
+    },
+    {
+      "milestone": "M2",
+      "description": "null harness on block-bootstrapped synthetic data",
+      "n_tests": 98000,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M5",
+      "description": "full frozen search space on real data, TRAIN stage",
+      "n_tests": 98,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M5-post",
+      "description": "POST-HOC confound check on the single null-beating candidate; run after results were seen; changes no status",
+      "n_tests": 3,
+      "status": "COMPLETED_POST_HOC"
+    },
+    {
+      "milestone": "M7",
+      "description": "SCHD intraday execution profile + dividend-ETF null test",
+      "n_tests": 72,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M7",
+      "description": "SCHD intraday execution profile + dividend-ETF null test",
+      "n_tests": 72,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "M7",
+      "description": "SCHD intraday execution profile + dividend-ETF null test",
+      "n_tests": 72,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N0",
+      "description": "REMOVED PERMANENTLY: pair_GDX_GLD",
+      "n_tests": 0,
+      "status": "REMOVED"
+    },
+    {
+      "milestone": "N0",
+      "description": "REMOVED PERMANENTLY: pair_XOP_XLE",
+      "n_tests": 0,
+      "status": "REMOVED"
+    },
+    {
+      "milestone": "N0",
+      "description": "REMOVED PERMANENTLY: corwin_schultz_as_level_estimator",
+      "n_tests": 0,
+      "status": "REMOVED"
+    },
+    {
+      "milestone": "N0",
+      "description": "M1 snapshot extension (SPY 1993, VIX, T10Y2Y) + deterministic event calendar",
+      "n_tests": 0,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N0",
+      "description": "REMOVED PERMANENTLY: pair_GDX_GLD",
+      "n_tests": 0,
+      "status": "REMOVED"
+    },
+    {
+      "milestone": "N0",
+      "description": "REMOVED PERMANENTLY: pair_XOP_XLE",
+      "n_tests": 0,
+      "status": "REMOVED"
+    },
+    {
+      "milestone": "N0",
+      "description": "REMOVED PERMANENTLY: corwin_schultz_as_level_estimator",
+      "n_tests": 0,
+      "status": "REMOVED"
+    },
+    {
+      "milestone": "N0",
+      "description": "M1 snapshot extension (SPY 1993, VIX, T10Y2Y) + deterministic event calendar",
+      "n_tests": 0,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N1",
+      "description": "volatility-persistence calibration + RV estimator selection",
+      "n_tests": 225,
+      "status": "FAILED_CALIBRATION"
+    },
+    {
+      "milestone": "N1",
+      "description": "RV estimator selection (QLIKE on VALIDATION)",
+      "n_tests": 216,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N1",
+      "description": "ITERATION: volatility-persistence gate respecified from close-to-close to the QLIKE-selected estimator after the first specification failed on GLD and SCHD",
+      "n_tests": 36,
+      "status": "POST_HOC_ITERATION"
+    },
+    {
+      "milestone": "N1",
+      "description": "volatility-persistence + short-term-reversal gates",
+      "n_tests": 72,
+      "status": "PASSED"
+    },
+    {
+      "milestone": "N2",
+      "description": "HAR-RV baseline vs naive / MA20 / EWMA",
+      "n_tests": 270,
+      "status": "PASSED"
+    },
+    {
+      "milestone": "N2",
+      "description": "HAR-RV baseline vs naive / MA20 / EWMA",
+      "n_tests": 270,
+      "status": "PASSED"
+    },
+    {
+      "milestone": "N3",
+      "description": "incremental candidate search on top of HAR-RV, Romano-Wolf stepdown, TRAIN + VALIDATION",
+      "n_tests": 255,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N3",
+      "description": "incremental candidate search on top of HAR-RV, Romano-Wolf stepdown, TRAIN + VALIDATION",
+      "n_tests": 255,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N4",
+      "description": "vol targeting on TRAIN+VALIDATION with matched-risk comparisons, leave-one-crisis-out, cost sweep and short-term gain accounting",
+      "n_tests": 16,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N4",
+      "description": "vol targeting on TRAIN+VALIDATION with matched-risk comparisons, leave-one-crisis-out, cost sweep and short-term gain accounting",
+      "n_tests": 16,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N4",
+      "description": "vol targeting on TRAIN+VALIDATION with matched-risk comparisons, leave-one-crisis-out, cost sweep and short-term gain accounting",
+      "n_tests": 16,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N4",
+      "description": "vol targeting on TRAIN+VALIDATION with matched-risk comparisons, leave-one-crisis-out, cost sweep and short-term gain accounting",
+      "n_tests": 16,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N5",
+      "description": "single TEST access: incremental candidates + vol-targeting strategies + full-sample crisis analysis",
+      "n_tests": 271,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N5",
+      "description": "single TEST access: incremental candidates + vol-targeting strategies + full-sample crisis analysis",
+      "n_tests": 271,
+      "status": "COMPLETED"
+    },
+    {
+      "milestone": "N5",
+      "description": "ITERATION after seeing TEST: the VERDICT RULE was tightened (a strategy must also retain a positive advantage with the crisis declines removed). No model, window, instrument or statistic changed, and the deterministic TEST evaluation was not re-derived -- so no second TEST access is logged, but the reporting iteration is.",
+      "n_tests": 0,
+      "status": "POST_HOC_ITERATION"
+    }
+  ],
+  "test_access_log": [
+    {
+      "access_id": "5a5e9eb207a5",
+      "timestamp": "2026-08-29 20:25:03",
+      "split_name": "TEST",
+      "accessed_by": "scripts/m5_search.py",
+      "experiment_id": "M5-41d75e07",
+      "n_rows_read": 1420,
+      "note": "single scheduled access; all 98 hypotheses evaluated in one pass; no parameter, window, target or pair changed afterwards"
+    },
+    {
+      "access_id": "999d467509fb",
+      "timestamp": "2026-08-29 22:55:05",
+      "split_name": "TEST",
+      "accessed_by": "scripts/n5_test_and_report.py",
+      "experiment_id": "N5-a0481ac1",
+      "n_rows_read": 5680,
+      "note": "single scheduled access; all incremental candidates and all vol-targeting strategies evaluated in one pass; no parameter, window, model or instrument changed afterwards"
+    }
+  ]
+}

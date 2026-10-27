@@ -1,0 +1,245 @@
+{
+  "rows": [
+    {
+      "instrument": "SPY",
+      "gap_full": 0.0418384715293455,
+      "gap_ex_all_crises": 0.05770498110391831,
+      "crisis_contribution_top5": -0.015866509574572807,
+      "gap_ex_2008": 0.032852249408789946,
+      "gap_ex_2020": 0.04570645204646451,
+      "gap_ex_2008_and_2020": 0.03731915930121599,
+      "loo_min_gap": 0.031386389326168884,
+      "loo_max_gap": 0.04673622229019825,
+      "n_episodes": 5,
+      "crisis_block_p_gap_le_0": 0.0205,
+      "crisis_block_ci_lo": 0.0031040785162095366,
+      "crisis_block_ci_hi": 0.07493240684742752,
+      "crisis_n_blocks": 11
+    },
+    {
+      "instrument": "SCHD",
+      "gap_full": 0.01968256435921134,
+      "gap_ex_all_crises": 0.03593732494695234,
+      "crisis_contribution_top5": -0.016254760587741002,
+      "gap_ex_2008": 0.01968256435921134,
+      "gap_ex_2020": 0.08830525240690534,
+      "gap_ex_2008_and_2020": 0.08830525240690534,
+      "loo_min_gap": -0.0066944314756196555,
+      "loo_max_gap": 0.04226256948745999,
+      "n_episodes": 4,
+      "crisis_block_p_gap_le_0": 0.354,
+      "crisis_block_ci_lo": -0.10478541191423689,
+      "crisis_block_ci_hi": 0.23812200491684285,
+      "crisis_n_blocks": 9
+    },
+    {
+      "instrument": "TLT",
+      "gap_full": 0.013943880687641852,
+      "gap_ex_all_crises": 0.00795628864681941,
+      "crisis_contribution_top5": 0.0059875920408224426,
+      "gap_ex_2008": 0.009114659503930811,
+      "gap_ex_2020": 0.026146931532875395,
+      "gap_ex_2008_and_2020": 0.02153041401888739,
+      "loo_min_gap": 0.0053439045839011046,
+      "loo_max_gap": 0.013870111577437394,
+      "n_episodes": 5,
+      "crisis_block_p_gap_le_0": 0.274,
+      "crisis_block_ci_lo": -0.03801541551053071,
+      "crisis_block_ci_hi": 0.05158873411078088,
+      "crisis_n_blocks": 11
+    },
+    {
+      "instrument": "IWM",
+      "gap_full": 0.008513957224444257,
+      "gap_ex_all_crises": -0.003064731984153468,
+      "crisis_contribution_top5": 0.011578689208597726,
+      "gap_ex_2008": 0.008171914433503069,
+      "gap_ex_2020": 0.012267422896254987,
+      "gap_ex_2008_and_2020": 0.012963147965401878,
+      "loo_min_gap": -0.008980748929243887,
+      "loo_max_gap": 0.010550228337651013,
+      "n_episodes": 5,
+      "crisis_block_p_gap_le_0": 0.3815,
+      "crisis_block_ci_lo": -0.0406479204577432,
+      "crisis_block_ci_hi": 0.05851228613675795,
+      "crisis_n_blocks": 11
+    }
+  ],
+  "loo": [
+    {
+      "instrument": "SPY",
+      "trough_date": "2009-03-06",
+      "depth": -0.8027263008675369,
+      "days_removed": 355,
+      "sharpe_vt": 0.6375533891375459,
+      "sharpe_bh": 0.6050809328059341,
+      "advantage": 0.032472456331611776
+    },
+    {
+      "instrument": "SPY",
+      "trough_date": "2002-10-08",
+      "depth": -0.644659253058836,
+      "days_removed": 637,
+      "sharpe_vt": 0.6892703218232997,
+      "sharpe_bh": 0.6425340995331015,
+      "advantage": 0.04673622229019825
+    },
+    {
+      "instrument": "SPY",
+      "trough_date": "2020-03-20",
+      "depth": -0.4112407705317196,
+      "days_removed": 23,
+      "sharpe_vt": 0.5481594233299719,
+      "sharpe_bh": 0.5077867434950329,
+      "advantage": 0.040372679834938974
+    },
+    {
+      "instrument": "SPY",
+      "trough_date": "2018-12-21",
+      "depth": -0.21503771866819488,
+      "days_removed": 65,
+      "sharpe_vt": 0.5427315037737978,
+      "sharpe_bh": 0.5113451144476289,
+      "advantage": 0.031386389326168884
+    },
+    {
+      "instrument": "SPY",
+      "trough_date": "1998-08-28",
+      "depth": -0.21109199798409595,
+      "days_removed": 30,
+      "sharpe_vt": 0.538973062501211,
+      "sharpe_bh": 0.5008689294013237,
+      "advantage": 0.03810413309988736
+    },
+    {
+      "instrument": "SCHD",
+      "trough_date": "2020-03-20",
+      "depth": -0.4059715215696058,
+      "days_removed": 41,
+      "sharpe_vt": 0.6194963001838648,
+      "sharpe_bh": 0.5772337306964048,
+      "advantage": 0.04226256948745999
+    },
+    {
+      "instrument": "SCHD",
+      "trough_date": "2018-12-21",
+      "depth": -0.1872662604743205,
+      "days_removed": 64,
+      "sharpe_vt": 0.5540224002843976,
+      "sharpe_bh": 0.5481399164822659,
+      "advantage": 0.005882483802131744
+    },
+    {
+      "instrument": "SCHD",
+      "trough_date": "2015-08-24",
+      "depth": -0.14994418931900055,
+      "days_removed": 123,
+      "sharpe_vt": 0.56518356277587,
+      "sharpe_bh": 0.556406668477635,
+      "advantage": 0.008776894298235027
+    },
+    {
+      "instrument": "SCHD",
+      "trough_date": "2018-03-22",
+      "depth": -0.13204935442463395,
+      "days_removed": 39,
+      "sharpe_vt": 0.5408616981273779,
+      "sharpe_bh": 0.5475561296029976,
+      "advantage": -0.0066944314756196555
+    },
+    {
+      "instrument": "TLT",
+      "trough_date": "2009-06-09",
+      "depth": -0.30904660842143317,
+      "days_removed": 111,
+      "sharpe_vt": 0.5302135326326195,
+      "sharpe_bh": 0.5196935317215999,
+      "advantage": 0.010520000911019567
+    },
+    {
+      "instrument": "TLT",
+      "trough_date": "2013-08-20",
+      "depth": -0.23141291280855913,
+      "days_removed": 269,
+      "sharpe_vt": 0.5611181636066068,
+      "sharpe_bh": 0.5557742590227057,
+      "advantage": 0.0053439045839011046
+    },
+    {
+      "instrument": "TLT",
+      "trough_date": "2016-12-13",
+      "depth": -0.19702770543933834,
+      "days_removed": 111,
+      "sharpe_vt": 0.5312543276664972,
+      "sharpe_bh": 0.5193520905501728,
+      "advantage": 0.011902237116324321
+    },
+    {
+      "instrument": "TLT",
+      "trough_date": "2015-06-25",
+      "depth": -0.172088009570472,
+      "days_removed": 102,
+      "sharpe_vt": 0.5076815409289943,
+      "sharpe_bh": 0.49734426218191413,
+      "advantage": 0.01033727874708018
+    },
+    {
+      "instrument": "TLT",
+      "trough_date": "2020-03-17",
+      "depth": -0.17111739124884373,
+      "days_removed": 7,
+      "sharpe_vt": 0.4654140428197656,
+      "sharpe_bh": 0.4515439312423282,
+      "advantage": 0.013870111577437394
+    },
+    {
+      "instrument": "IWM",
+      "trough_date": "2009-03-06",
+      "depth": -0.882855638540399,
+      "days_removed": 416,
+      "sharpe_vt": 0.48390209152737124,
+      "sharpe_bh": 0.4928828404566151,
+      "advantage": -0.008980748929243887
+    },
+    {
+      "instrument": "IWM",
+      "trough_date": "2020-03-20",
+      "depth": -0.5298943495495108,
+      "days_removed": 390,
+      "sharpe_vt": 0.42742626312195664,
+      "sharpe_bh": 0.4168760347843056,
+      "advantage": 0.010550228337651013
+    },
+    {
+      "instrument": "IWM",
+      "trough_date": "2011-09-30",
+      "depth": -0.34129091986165383,
+      "days_removed": 108,
+      "sharpe_vt": 0.3902924405225453,
+      "sharpe_bh": 0.3831462727881643,
+      "advantage": 0.0071461677343809815
+    },
+    {
+      "instrument": "IWM",
+      "trough_date": "2016-02-10",
+      "depth": -0.2967963201006105,
+      "days_removed": 161,
+      "sharpe_vt": 0.41739407660363453,
+      "sharpe_bh": 0.40811253048634616,
+      "advantage": 0.009281546117288375
+    },
+    {
+      "instrument": "IWM",
+      "trough_date": "2006-06-12",
+      "depth": -0.15249846733003292,
+      "days_removed": 25,
+      "sharpe_vt": 0.35479312162215754,
+      "sharpe_bh": 0.3499229159670212,
+      "advantage": 0.00487020565513635
+    }
+  ],
+  "n_survives_ex_all_crises": 3,
+  "n_survives_loo": 2,
+  "n_survives_ex_2008_and_2020": 4,
+  "crisis_dependent": false
+}

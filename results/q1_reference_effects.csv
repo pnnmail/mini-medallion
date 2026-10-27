@@ -1,0 +1,7 @@
+effect,regime,IC,note,K_detectable
+short-term reversal (M0),returns,0.0556,"mean IC over 36 cells, correct sign 36/36",0
+"overnight premium, SPY (M0/M7)",returns,0.035685986971593274,"t = 1.79 on n = 2516, converted to IC",0
+TSMOM 12-1 (M0),returns,0.02416841222614159,|t| < 0.25 on 107 monthly observations,0
+typical return predictor (literature),returns,0.035,IC 0.02-0.05,0
+"volatility persistence, SPY (M2)",volatility,0.16012625981785555,t = 7.404 on n = 2138,2000
+"VIX over HAR, SPY h=5 (M1/forensics)",volatility,0.18958837276159557,"t = 14.38 on n = 5753, dR2 0.046",2000

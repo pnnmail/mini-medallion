@@ -1,0 +1,47 @@
+{
+  "consolidated_results": [
+    {
+      "result_id": "CR-1",
+      "name": "covariance identity for sizing decisions",
+      "statuses": "STRUCTURAL_RESULT",
+      "evidence": "E[w r] = E[w]E[r] + Cov(w,r); identity closes to 1.4e-20; 77% of the numerator difference runs through the covariance term",
+      "magnitude": "exact",
+      "needs_multiplicity_correction": false,
+      "why": "never selected from a pool, so it carries no selection bias by construction -- which is exactly why it survived"
+    },
+    {
+      "result_id": "CR-2",
+      "name": "log(VIX) incremental over HAR for forecasting realised volatility",
+      "statuses": "CALIBRATION_PASS | EXEMPLAR_COVARIANCE_THESIS",
+      "evidence": "t = 14.13 (SPY h=5), dR2 0.03-0.06, survives four artefact tests; and sizing on HAR+log(VIX) was WORSE than sizing on HAR in 8 of 8 comparisons on all pre-TEST data",
+      "magnitude": "IC 0.190",
+      "needs_multiplicity_correction": true,
+      "why": "BOTH statuses are required and neither may be dropped. As CALIBRATION_PASS it is an independent re-derivation of a standard literature result, evidence the harness detects real effects. As EXEMPLAR_COVARIANCE_THESIS it is the strongest single example of CR-1: an overwhelming forecast improvement that does not improve the decision."
+    },
+    {
+      "result_id": "CR-3",
+      "name": "multiplicity arithmetic",
+      "statuses": "TRANSFERABLE_TOOL",
+      "evidence": "lambda measured per family (1.705 / 1.195 / 0.999); exact max-|z| quantiles; threshold-vs-K curve to K = 1268; MDE_IC floor 0.0796 at K = 1 in the returns regime",
+      "magnitude": "cost of the search space exceeded every known real return effect",
+      "needs_multiplicity_correction": false,
+      "why": "a fact about method, not about markets; portable to any search"
+    }
+  ],
+  "completion_gate": {
+    "Q0 closed: every TLT figure has a written specification, status = ARGUMENT_WEAKENED": true,
+    "MDE_IC(K) built to K = 1268, empirically and analytically, divergence reported (mean -0.285)": true,
+    "reference effects plotted, regimes separated and labelled": true,
+    "K* determined for both thresholds and both regimes (returns 0/0, volatility 0/0)": true,
+    "all 1268 trials assigned to 5 classes, each with a power verdict": true,
+    "four levers assessed; recorded that none changes the crisis count": true,
+    "Q4 verdict derived from the numbers: CONCLUDE": true,
+    "PROGRAM_SUMMARY.md written for a reader who has seen no milestone": true,
+    "the VIX result recorded under BOTH statuses": true,
+    "mu-revision log added to portfolio-risk; the weight-drift finding recorded there too": true,
+    "TEST was not opened in M4 (0 accesses by M4 scripts)": true
+  },
+  "all_gates_passed": true,
+  "verdict": "CONCLUDE",
+  "test_accesses_in_m4": 0
+}

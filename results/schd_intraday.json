@@ -1,0 +1,662 @@
+{
+  "window": {
+    "first": "2023-10-02",
+    "last": "2026-08-28"
+  },
+  "bar_interval": "1h",
+  "measurement_note": "yfinance 1h bars are stamped 09:30/10:30/.../15:30, so the 09:45 start the spec asks for is not reachable. The first hour is isolated as its own leg instead, which removes the opening auction print and the day's worst spread from the morning leg -- more conservative than trimming to 09:45.",
+  "results": {
+    "SCHD": {
+      "all_days": {
+        "overnight": {
+          "n": 720,
+          "mean_bps": 5.2299047304543125,
+          "t_nw": 3.379484166589309,
+          "p_boot": 0.0005,
+          "ci_lo_bps": 1.9984984058008306,
+          "ci_hi_bps": 8.06071718990056
+        },
+        "first_hour": {
+          "n": 721,
+          "mean_bps": 0.014951731123115033,
+          "t_nw": 0.008713608005185535,
+          "p_boot": 0.9925,
+          "ci_lo_bps": -3.430343910289142,
+          "ci_hi_bps": 3.3610224822966694
+        },
+        "morning_ex_first_hour": {
+          "n": 721,
+          "mean_bps": -0.5271148035795478,
+          "t_nw": -0.33586204463809205,
+          "p_boot": 0.6615,
+          "ci_lo_bps": -2.8585282764904147,
+          "ci_hi_bps": 1.750823230765441
+        },
+        "afternoon": {
+          "n": 721,
+          "mean_bps": 0.5342626330200169,
+          "t_nw": 0.41036678419281264,
+          "p_boot": 0.6725,
+          "ci_lo_bps": -1.9075780732529513,
+          "ci_hi_bps": 3.1934381849252
+        },
+        "open_to_noon": {
+          "n": 721,
+          "mean_bps": -0.5107337998148674,
+          "t_nw": -0.21881844414746113,
+          "p_boot": 0.787,
+          "ci_lo_bps": -4.237184202160198,
+          "ci_hi_bps": 3.3697197121628553
+        },
+        "full_day_close_to_close": {
+          "n": 720,
+          "mean_bps": 5.365259143666925,
+          "t_nw": 1.7083055133525695,
+          "p_boot": 0.0335,
+          "ci_lo_bps": 0.21437184235115903,
+          "ci_hi_bps": 10.196290139155884
+        }
+      },
+      "ex_month_end": {
+        "overnight": {
+          "n": 615,
+          "mean_bps": 5.59113780156734,
+          "t_nw": 3.260725580432764,
+          "p_boot": 0.0005,
+          "ci_lo_bps": 1.9522484715732589,
+          "ci_hi_bps": 8.877457936006975
+        },
+        "first_hour": {
+          "n": 616,
+          "mean_bps": -0.36844666080590016,
+          "t_nw": -0.19481118156848046,
+          "p_boot": 0.8445,
+          "ci_lo_bps": -4.051836089481904,
+          "ci_hi_bps": 3.3208823609327762
+        },
+        "morning_ex_first_hour": {
+          "n": 616,
+          "mean_bps": -0.2653837772459494,
+          "t_nw": -0.15060245635524241,
+          "p_boot": 0.831,
+          "ci_lo_bps": -2.6787596531114426,
+          "ci_hi_bps": 2.0884814076951788
+        },
+        "afternoon": {
+          "n": 616,
+          "mean_bps": 0.47328184800545703,
+          "t_nw": 0.34034702528259647,
+          "p_boot": 0.6955,
+          "ci_lo_bps": -2.0756570503100287,
+          "ci_hi_bps": 2.913451274344442
+        },
+        "open_to_noon": {
+          "n": 616,
+          "mean_bps": -0.6287540055712546,
+          "t_nw": -0.24026961763115712,
+          "p_boot": 0.773,
+          "ci_lo_bps": -4.808448814508831,
+          "ci_hi_bps": 3.2298385495295516
+        },
+        "full_day_close_to_close": {
+          "n": 615,
+          "mean_bps": 5.566006045162966,
+          "t_nw": 1.5959634539462975,
+          "p_boot": 0.0695,
+          "ci_lo_bps": -0.7361235603939108,
+          "ci_hi_bps": 11.338763009958932
+        }
+      },
+      "month_end_only": {
+        "overnight": {
+          "n": 105,
+          "mean_bps": 3.1141110282208686,
+          "t_nw": 0.9106760861810518,
+          "p_boot": 0.239,
+          "ci_lo_bps": -2.11958944201249,
+          "ci_hi_bps": 8.440388432493444
+        },
+        "first_hour": {
+          "n": 105,
+          "mean_bps": 2.264222297106671,
+          "t_nw": 0.5721846604418669,
+          "p_boot": 0.433,
+          "ci_lo_bps": -3.151536091574314,
+          "ci_hi_bps": 7.3604035430359405
+        },
+        "morning_ex_first_hour": {
+          "n": 105,
+          "mean_bps": -2.062603491403324,
+          "t_nw": -0.6785284178542724,
+          "p_boot": 0.5325,
+          "ci_lo_bps": -8.93132530522012,
+          "ci_hi_bps": 3.8987549071867207
+        },
+        "afternoon": {
+          "n": 105,
+          "mean_bps": 0.8920165717721013,
+          "t_nw": 0.24400655151440426,
+          "p_boot": 0.731,
+          "ci_lo_bps": -4.385686240091566,
+          "ci_hi_bps": 6.277300368125199
+        },
+        "open_to_noon": {
+          "n": 105,
+          "mean_bps": 0.1816514072892707,
+          "t_nw": 0.039478601134892474,
+          "p_boot": 0.943,
+          "ci_lo_bps": -4.703944563868727,
+          "ci_hi_bps": 5.338450415835535
+        },
+        "full_day_close_to_close": {
+          "n": 105,
+          "mean_bps": 4.189455863475823,
+          "t_nw": 0.6142073922794911,
+          "p_boot": 0.2405,
+          "ci_lo_bps": -3.003868791771604,
+          "ci_hi_bps": 11.649103961607606
+        }
+      },
+      "n_sessions": 721,
+      "first_date": "2023-10-02",
+      "last_date": "2026-08-28"
+    },
+    "VYM": {
+      "all_days": {
+        "overnight": {
+          "n": 720,
+          "mean_bps": 4.8396463120319,
+          "t_nw": 2.8652486194837214,
+          "p_boot": 0.01,
+          "ci_lo_bps": 0.920139215045373,
+          "ci_hi_bps": 7.986516188662877
+        },
+        "first_hour": {
+          "n": 721,
+          "mean_bps": 0.9945751036114636,
+          "t_nw": 0.7139872627663344,
+          "p_boot": 0.437,
+          "ci_lo_bps": -1.514730134614303,
+          "ci_hi_bps": 3.5644898594787024
+        },
+        "morning_ex_first_hour": {
+          "n": 721,
+          "mean_bps": -0.15763565081860376,
+          "t_nw": -0.09929909265360143,
+          "p_boot": 0.8945,
+          "ci_lo_bps": -2.405640240552667,
+          "ci_hi_bps": 2.083766832550781
+        },
+        "afternoon": {
+          "n": 721,
+          "mean_bps": 0.5057420070299278,
+          "t_nw": 0.3921963885386946,
+          "p_boot": 0.714,
+          "ci_lo_bps": -2.1781450464285457,
+          "ci_hi_bps": 3.120949138386799
+        },
+        "open_to_noon": {
+          "n": 721,
+          "mean_bps": 0.8363578545070194,
+          "t_nw": 0.39652669710779714,
+          "p_boot": 0.5995,
+          "ci_lo_bps": -2.341380383062868,
+          "ci_hi_bps": 4.008363137800142
+        },
+        "full_day_close_to_close": {
+          "n": 720,
+          "mean_bps": 6.29920427564924,
+          "t_nw": 2.1262308360151527,
+          "p_boot": 0.006,
+          "ci_lo_bps": 1.6993043105404295,
+          "ci_hi_bps": 10.50760760335318
+        }
+      },
+      "ex_month_end": {
+        "overnight": {
+          "n": 615,
+          "mean_bps": 4.762908049817422,
+          "t_nw": 2.4929192507912203,
+          "p_boot": 0.0195,
+          "ci_lo_bps": 0.3431900455920564,
+          "ci_hi_bps": 8.334996179973126
+        },
+        "first_hour": {
+          "n": 616,
+          "mean_bps": 1.107829389079733,
+          "t_nw": 0.7170700746521848,
+          "p_boot": 0.4545,
+          "ci_lo_bps": -1.6231135304138316,
+          "ci_hi_bps": 3.9149137827794855
+        },
+        "morning_ex_first_hour": {
+          "n": 616,
+          "mean_bps": 0.030096755414167023,
+          "t_nw": 0.01680593399456657,
+          "p_boot": 0.9815,
+          "ci_lo_bps": -2.567785840313265,
+          "ci_hi_bps": 2.4125396482271992
+        },
+        "afternoon": {
+          "n": 616,
+          "mean_bps": -0.14327208523824775,
+          "t_nw": -0.10362411570846794,
+          "p_boot": 0.9095,
+          "ci_lo_bps": -2.7027314252586088,
+          "ci_hi_bps": 2.4753343340666643
+        },
+        "open_to_noon": {
+          "n": 616,
+          "mean_bps": 1.1396319591120674,
+          "t_nw": 0.479245951840617,
+          "p_boot": 0.5315,
+          "ci_lo_bps": -2.3239773749182335,
+          "ci_hi_bps": 4.737564267747772
+        },
+        "full_day_close_to_close": {
+          "n": 615,
+          "mean_bps": 5.893014708157785,
+          "t_nw": 1.787658333441287,
+          "p_boot": 0.02,
+          "ci_lo_bps": 0.873862267689073,
+          "ci_hi_bps": 10.552917718167384
+        }
+      },
+      "month_end_only": {
+        "overnight": {
+          "n": 105,
+          "mean_bps": 5.2891132764309905,
+          "t_nw": 1.7709493795218445,
+          "p_boot": 0.0055,
+          "ci_lo_bps": 1.2620520332436713,
+          "ci_hi_bps": 9.163103540108004
+        },
+        "first_hour": {
+          "n": 105,
+          "mean_bps": 0.33014996219761705,
+          "t_nw": 0.10803916879572578,
+          "p_boot": 0.904,
+          "ci_lo_bps": -6.041965266270649,
+          "ci_hi_bps": 6.018460612516217
+        },
+        "morning_ex_first_hour": {
+          "n": 105,
+          "mean_bps": -1.2589991007175256,
+          "t_nw": -0.4336095621312779,
+          "p_boot": 0.6485,
+          "ci_lo_bps": -6.987172650262114,
+          "ci_hi_bps": 4.172315508552705
+        },
+        "afternoon": {
+          "n": 105,
+          "mean_bps": 4.313291348336557,
+          "t_nw": 1.2224538179280504,
+          "p_boot": 0.0635,
+          "ci_lo_bps": -0.12120893175627312,
+          "ci_hi_bps": 9.094261404627792
+        },
+        "open_to_noon": {
+          "n": 105,
+          "mean_bps": -0.9428502258425963,
+          "t_nw": -0.24259163117696886,
+          "p_boot": 0.6415,
+          "ci_lo_bps": -5.025959733602007,
+          "ci_hi_bps": 3.792700549016246
+        },
+        "full_day_close_to_close": {
+          "n": 105,
+          "mean_bps": 8.678314599527758,
+          "t_nw": 1.3749533441781607,
+          "p_boot": 0.0055,
+          "ci_lo_bps": 2.4507102443405198,
+          "ci_hi_bps": 14.286785811369025
+        }
+      },
+      "n_sessions": 721,
+      "first_date": "2023-10-02",
+      "last_date": "2026-08-28"
+    },
+    "DGRO": {
+      "all_days": {
+        "overnight": {
+          "n": 720,
+          "mean_bps": 3.4778588726998585,
+          "t_nw": 2.2209472188679307,
+          "p_boot": 0.037,
+          "ci_lo_bps": -0.01349156183386637,
+          "ci_hi_bps": 6.456177387113081
+        },
+        "first_hour": {
+          "n": 721,
+          "mean_bps": 2.3694723094809205,
+          "t_nw": 1.8927364910927664,
+          "p_boot": 0.0515,
+          "ci_lo_bps": -0.016618112906812903,
+          "ci_hi_bps": 4.764201217716453
+        },
+        "morning_ex_first_hour": {
+          "n": 721,
+          "mean_bps": -0.07095723731843098,
+          "t_nw": -0.047228889474851536,
+          "p_boot": 0.9635,
+          "ci_lo_bps": -2.421896220712326,
+          "ci_hi_bps": 2.146510718902957
+        },
+        "afternoon": {
+          "n": 721,
+          "mean_bps": 0.5554326123776698,
+          "t_nw": 0.44546370272851626,
+          "p_boot": 0.6385,
+          "ci_lo_bps": -1.7937794833937712,
+          "ci_hi_bps": 2.8694354382905085
+        },
+        "open_to_noon": {
+          "n": 721,
+          "mean_bps": 2.298904151387155,
+          "t_nw": 1.1728913270966217,
+          "p_boot": 0.104,
+          "ci_lo_bps": -0.3707650055444604,
+          "ci_hi_bps": 5.133819674297751
+        },
+        "full_day_close_to_close": {
+          "n": 720,
+          "mean_bps": 6.411775536761895,
+          "t_nw": 2.282553813988237,
+          "p_boot": 0.0035,
+          "ci_lo_bps": 1.761098595194988,
+          "ci_hi_bps": 10.437513949692613
+        }
+      },
+      "ex_month_end": {
+        "overnight": {
+          "n": 615,
+          "mean_bps": 3.4992342835107655,
+          "t_nw": 1.982064940158059,
+          "p_boot": 0.06,
+          "ci_lo_bps": -0.47359483123304386,
+          "ci_hi_bps": 6.933623227075153
+        },
+        "first_hour": {
+          "n": 616,
+          "mean_bps": 2.4816157243642127,
+          "t_nw": 1.784571485611291,
+          "p_boot": 0.07,
+          "ci_lo_bps": -0.12737207797580496,
+          "ci_hi_bps": 5.147632477749939
+        },
+        "morning_ex_first_hour": {
+          "n": 616,
+          "mean_bps": 0.1652827610778955,
+          "t_nw": 0.09766165120202894,
+          "p_boot": 0.892,
+          "ci_lo_bps": -2.407037483868389,
+          "ci_hi_bps": 2.703444603778706
+        },
+        "afternoon": {
+          "n": 616,
+          "mean_bps": -0.04560990764417791,
+          "t_nw": -0.03424580059630582,
+          "p_boot": 0.9725,
+          "ci_lo_bps": -2.526684302000669,
+          "ci_hi_bps": 2.4359331891961804
+        },
+        "open_to_noon": {
+          "n": 616,
+          "mean_bps": 2.649796055922365,
+          "t_nw": 1.1971602434647652,
+          "p_boot": 0.0875,
+          "ci_lo_bps": -0.23185249228204324,
+          "ci_hi_bps": 5.738318575544012
+        },
+        "full_day_close_to_close": {
+          "n": 615,
+          "mean_bps": 6.1945657946414086,
+          "t_nw": 1.977878903784198,
+          "p_boot": 0.0125,
+          "ci_lo_bps": 1.040614158778402,
+          "ci_hi_bps": 10.99321052497162
+        }
+      },
+      "month_end_only": {
+        "overnight": {
+          "n": 105,
+          "mean_bps": 3.352660037950264,
+          "t_nw": 1.1584771539962149,
+          "p_boot": 0.067,
+          "ci_lo_bps": -0.17489301020349457,
+          "ci_hi_bps": 7.048203936756218
+        },
+        "first_hour": {
+          "n": 105,
+          "mean_bps": 1.7115642754989373,
+          "t_nw": 0.631980611678596,
+          "p_boot": 0.3845,
+          "ci_lo_bps": -2.2681887656635285,
+          "ci_hi_bps": 5.509132913490663
+        },
+        "morning_ex_first_hour": {
+          "n": 105,
+          "mean_bps": -1.4568985612435466,
+          "t_nw": -0.5206603586887529,
+          "p_boot": 0.621,
+          "ci_lo_bps": -7.3268167946114895,
+          "ci_hi_bps": 3.9960572511837933
+        },
+        "afternoon": {
+          "n": 105,
+          "mean_bps": 4.081548729839176,
+          "t_nw": 1.172603500404243,
+          "p_boot": 0.073,
+          "ci_lo_bps": -0.11703161878090831,
+          "ci_hi_bps": 8.81871409903952
+        },
+        "open_to_noon": {
+          "n": 105,
+          "mean_bps": 0.24033831144725556,
+          "t_nw": 0.06804158132922541,
+          "p_boot": 0.9015,
+          "ci_lo_bps": -4.432280358698776,
+          "ci_hi_bps": 4.419146266252504
+        },
+        "full_day_close_to_close": {
+          "n": 105,
+          "mean_bps": 7.684004026324747,
+          "t_nw": 1.3082465479628884,
+          "p_boot": 0.0135,
+          "ci_lo_bps": 1.7197029851828758,
+          "ci_hi_bps": 13.37565009502219
+        }
+      },
+      "n_sessions": 721,
+      "first_date": "2023-10-02",
+      "last_date": "2026-08-28"
+    },
+    "VIG": {
+      "all_days": {
+        "overnight": {
+          "n": 720,
+          "mean_bps": 4.167052595041059,
+          "t_nw": 2.4257404179704767,
+          "p_boot": 0.0275,
+          "ci_lo_bps": 0.2775651690688533,
+          "ci_hi_bps": 7.396900814330964
+        },
+        "first_hour": {
+          "n": 721,
+          "mean_bps": 1.380988779841616,
+          "t_nw": 1.1732128438233054,
+          "p_boot": 0.217,
+          "ci_lo_bps": -0.8736583514071105,
+          "ci_hi_bps": 3.4576749737363106
+        },
+        "morning_ex_first_hour": {
+          "n": 721,
+          "mean_bps": -0.3345920350465185,
+          "t_nw": -0.2128978621378408,
+          "p_boot": 0.763,
+          "ci_lo_bps": -2.5429286826923283,
+          "ci_hi_bps": 1.8168373784704583
+        },
+        "afternoon": {
+          "n": 721,
+          "mean_bps": 0.7658451614593527,
+          "t_nw": 0.5896621650559184,
+          "p_boot": 0.5315,
+          "ci_lo_bps": -1.7498751194027498,
+          "ci_hi_bps": 3.1730070846670984
+        },
+        "open_to_noon": {
+          "n": 721,
+          "mean_bps": 1.0483158823346812,
+          "t_nw": 0.5296344253821279,
+          "p_boot": 0.4445,
+          "ci_lo_bps": -1.7692616049588905,
+          "ci_hi_bps": 3.802651658715632
+        },
+        "full_day_close_to_close": {
+          "n": 720,
+          "mean_bps": 5.991183131309063,
+          "t_nw": 2.074891498076251,
+          "p_boot": 0.012,
+          "ci_lo_bps": 1.413027023726395,
+          "ci_hi_bps": 10.348453612552788
+        }
+      },
+      "ex_month_end": {
+        "overnight": {
+          "n": 615,
+          "mean_bps": 4.5354339120752165,
+          "t_nw": 2.3537495699792963,
+          "p_boot": 0.0245,
+          "ci_lo_bps": 0.4020841699085363,
+          "ci_hi_bps": 8.336869025781603
+        },
+        "first_hour": {
+          "n": 616,
+          "mean_bps": 1.5636290660699375,
+          "t_nw": 1.2034589857177562,
+          "p_boot": 0.2255,
+          "ci_lo_bps": -1.1215474733418307,
+          "ci_hi_bps": 3.854629297468044
+        },
+        "morning_ex_first_hour": {
+          "n": 616,
+          "mean_bps": -0.1192776952240283,
+          "t_nw": -0.06753602869184173,
+          "p_boot": 0.924,
+          "ci_lo_bps": -2.768177298918121,
+          "ci_hi_bps": 2.574444791120124
+        },
+        "afternoon": {
+          "n": 616,
+          "mean_bps": 0.18594552540845713,
+          "t_nw": 0.13417310188437212,
+          "p_boot": 0.8905,
+          "ci_lo_bps": -2.3741687249562538,
+          "ci_hi_bps": 2.5178019180100546
+        },
+        "open_to_noon": {
+          "n": 616,
+          "mean_bps": 1.4483600414737554,
+          "t_nw": 0.6510756311864202,
+          "p_boot": 0.3565,
+          "ci_lo_bps": -1.629080861805707,
+          "ci_hi_bps": 4.550886724073421
+        },
+        "full_day_close_to_close": {
+          "n": 615,
+          "mean_bps": 6.1800652352364525,
+          "t_nw": 1.9297576745786555,
+          "p_boot": 0.011,
+          "ci_lo_bps": 1.2122436527318978,
+          "ci_hi_bps": 10.757673052246975
+        }
+      },
+      "month_end_only": {
+        "overnight": {
+          "n": 105,
+          "mean_bps": 2.009390595269569,
+          "t_nw": 0.5969921812509865,
+          "p_boot": 0.3325,
+          "ci_lo_bps": -2.1484019510576915,
+          "ci_hi_bps": 5.931848526665028
+        },
+        "first_hour": {
+          "n": 105,
+          "mean_bps": 0.3094991006354644,
+          "t_nw": 0.11521117328027959,
+          "p_boot": 0.8935,
+          "ci_lo_bps": -4.364403237782353,
+          "ci_hi_bps": 4.398775068853809
+        },
+        "morning_ex_first_hour": {
+          "n": 105,
+          "mean_bps": -1.597769495338461,
+          "t_nw": -0.5300562728791769,
+          "p_boot": 0.624,
+          "ci_lo_bps": -8.002450286909195,
+          "ci_hi_bps": 4.657007260275091
+        },
+        "afternoon": {
+          "n": 105,
+          "mean_bps": 4.167923026291272,
+          "t_nw": 1.1426772192412442,
+          "p_boot": 0.049,
+          "ci_lo_bps": 0.21461386517644349,
+          "ci_hi_bps": 8.585451863025256
+        },
+        "open_to_noon": {
+          "n": 105,
+          "mean_bps": -1.298609851281221,
+          "t_nw": -0.34292969069406276,
+          "p_boot": 0.562,
+          "ci_lo_bps": -5.70018256792773,
+          "ci_hi_bps": 3.2432607083015013
+        },
+        "full_day_close_to_close": {
+          "n": 105,
+          "mean_bps": 4.884873665448637,
+          "t_nw": 0.7707106434362898,
+          "p_boot": 0.141,
+          "ci_lo_bps": -2.0568463306663185,
+          "ci_hi_bps": 11.280560045068514
+        }
+      },
+      "n_sessions": 721,
+      "first_date": "2023-10-02",
+      "last_date": "2026-08-28"
+    }
+  },
+  "largest_schd_timing_leg": "afternoon",
+  "timing_legs_considered": [
+    "first_hour",
+    "morning_ex_first_hour",
+    "afternoon"
+  ],
+  "overnight_excluded_from_actionability": "the overnight leg is not a time-of-day decision -- a holder receives it regardless of when the buy is placed -- so it is reported but cannot make an execution profile actionable",
+  "intraday_price_path_bps_from_open": {
+    "09:30 (open)": 0.0,
+    "10:30": 0.014951731123115033,
+    "12:30": -0.5121630724564327,
+    "16:00": 0.02209956056358418
+  },
+  "cheapest_checkpoint_on_average": "12:30",
+  "session_best_to_worst_spread_bps": 0.5342626330200169,
+  "null_test": {
+    "controls": [
+      "VYM",
+      "DGRO",
+      "VIG"
+    ],
+    "controls_same_sign": 3,
+    "controls_significant_p05": 0,
+    "interpretation": "The same sign appears in all three control ETFs, which points at a shared structure in dividend-ETF order flow rather than anything specific to SCHD."
+  },
+  "vs_cost": {
+    "leg_bps": 0.5342626330200169,
+    "spread_anchor_bps": 3.0,
+    "ratio": 0.17808754434000562,
+    "actionable": false,
+    "caveat": "the 3 bps figure is the spec's quoted-spread anchor; M4 showed daily-bar estimators cannot independently confirm it, so this comparison inherits that assumption"
+  }
+}

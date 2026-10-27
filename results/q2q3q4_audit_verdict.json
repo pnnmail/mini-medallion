@@ -1,0 +1,99 @@
+{
+  "classes": [
+    {
+      "cls": 1,
+      "name": "feature -> return",
+      "K": 59,
+      "regime": "returns",
+      "sources": "M0 search (56 return/direction targets) + M5-post confound (3)",
+      "mde": 0.13566147582444524,
+      "target_effect": 0.0556,
+      "n_multiplier_needed": 5.9533784557174,
+      "verdict": "UNANSWERABLE_IN_PRINCIPLE"
+    },
+    {
+      "cls": 2,
+      "name": "feature -> volatility",
+      "K": 656,
+      "regime": "volatility",
+      "sources": "M0 vol targets (42) + M1 N2 HAR baseline (270) + M1 N3 incremental (255) + M2sup P0 universe (89)",
+      "mde": 0.10186296400553532,
+      "target_effect": 0.16012625981785555,
+      "n_multiplier_needed": 0.4046760469203535,
+      "verdict": "ANSWERABLE"
+    },
+    {
+      "cls": 3,
+      "name": "decision comparisons by Sharpe",
+      "K": 469,
+      "regime": "decision",
+      "sources": "M1 N4 (16) + M2sup P2 (148) P3 (9) + M2 N0 (12) N2 (40) N3 (20) N4 (12) N5 (12) N6 (200)",
+      "mde": 0.082726,
+      "target_effect": 0.042,
+      "n_multiplier_needed": 3.879586777777777,
+      "verdict": "UNDERPOWERED"
+    },
+    {
+      "cls": 4,
+      "name": "structural identities and decompositions",
+      "K": 12,
+      "regime": "algebraic",
+      "sources": "M2 N1 (12)",
+      "mde": 0.0,
+      "target_effect": NaN,
+      "n_multiplier_needed": 0.0,
+      "verdict": "ANSWERABLE"
+    },
+    {
+      "cls": 5,
+      "name": "calibration facts",
+      "K": 72,
+      "regime": "volatility",
+      "sources": "M0 M7 SCHD intraday legs (72)",
+      "mde": 0.08896433090339079,
+      "target_effect": 0.16012625981785555,
+      "n_multiplier_needed": 0.3086787367783985,
+      "verdict": "ANSWERABLE"
+    }
+  ],
+  "total_trials": 1268,
+  "levers": [
+    {
+      "lever": "shrink the search space (1268 -> 1)",
+      "cost": "free",
+      "mde_multiplier": 2.051053465097584,
+      "mde_after_returns": 0.07955769803768824,
+      "does_not_fix": "even a SINGLE pre-registered return hypothesis has MDE_IC = 0.0796, above every known return effect. The binding constraint is n, not K."
+    },
+    {
+      "lever": "longer history (SPY from 1993, n x 1.65)",
+      "cost": "free, already used",
+      "mde_multiplier": 1.284523257866513,
+      "mde_after_returns": 0.06193558392226156,
+      "does_not_fix": "0.0796 -> 0.0620, still above an IC of 0.05. And it adds no crises: 1993-2006 contributes one (2000-2002)."
+    },
+    {
+      "lever": "intraday data (nominally n x 390)",
+      "cost": "free for 730 days only",
+      "mde_multiplier": NaN,
+      "mde_after_returns": NaN,
+      "does_not_fix": "intraday autocorrelation and the U-shaped profile make the effective multiplier far below sqrt(390). For SIZING it gives nothing at all: the number of rebalancing episodes is set by the band, not by data frequency -- 82-331 levels, measured in M2."
+    },
+    {
+      "lever": "wide cross-section (500 names)",
+      "cost": "paid point-in-time constituents",
+      "mde_multiplier": 15.811388300841896,
+      "mde_after_returns": 0.010320225468544034,
+      "does_not_fix": "survivorship bias without point-in-time membership; and it does not add a single crisis."
+    }
+  ],
+  "K_star": {
+    "returns_0.05": 0,
+    "returns_0.03": 0,
+    "volatility_0.05": 0,
+    "volatility_0.03": 0
+  },
+  "verdict": "CONCLUDE",
+  "reasoning": "CONTINUE_NARROW is not available, and not because the budget would be small. K* = 0 in the returns regime: at K = 1 -- a single pre-registered hypothesis, the narrowest search that exists -- the minimum detectable IC is 0.0796, above short-term reversal (0.0556), above the overnight premium (0.0357), above TSMOM (0.0242) and above the literature's 0.02-0.05. There is no hypothesis space small enough to make a return effect of realistic size visible on this data. 'A different kind of activity' would still be an activity that cannot resolve its own question.\n\nCONTINUE_AFTER_DATA has exactly one candidate -- a wide cross-section -- and it is a genuine lever for the returns regime (MDE 0.1632 -> 0.0103). But it does not add a single crisis, so every decision-level question this program actually asked stays exactly where it is. Buying it would answer a question the program did not ask.\n\nThe volatility regime is the one place the harness has power, and it used it: the two effects it detected (persistence at IC 0.160, VIX over HAR at 0.190) are both textbook results, and M1 showed the second does not improve a decision.",
+  "feasible_n_multiplier": 4.0
+}

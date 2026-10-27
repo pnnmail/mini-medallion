@@ -1,0 +1,269 @@
+{
+  "snapshot_date": "2026-08-29",
+  "tickers": {
+    "GLD": {
+      "first_date": "2004-11-18",
+      "last_date": "2026-08-28",
+      "row_count": 5478,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.10841233744964729,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 0.0,
+      "n_dividend_events": 0,
+      "splits_detected": {}
+    },
+    "GDX": {
+      "first_date": "2006-05-22",
+      "last_date": "2026-08-28",
+      "row_count": 5100,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.25907549273095,
+      "n_abs_return_gt_20pct": 2,
+      "total_dividends_paid": 5.676,
+      "n_dividend_events": 19,
+      "splits_detected": {}
+    },
+    "XLE": {
+      "first_date": "2000-01-03",
+      "last_date": "2026-08-28",
+      "row_count": 6704,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.22491001572258895,
+      "n_abs_return_gt_20pct": 1,
+      "total_dividends_paid": 21.6025,
+      "n_dividend_events": 107,
+      "splits_detected": {
+        "2025-12-05": 2.0
+      }
+    },
+    "XOP": {
+      "first_date": "2006-06-22",
+      "last_date": "2026-08-28",
+      "row_count": 5078,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 1,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.4599845017565718,
+      "n_abs_return_gt_20pct": 1,
+      "total_dividends_paid": 38.769000000000005,
+      "n_dividend_events": 80,
+      "splits_detected": {
+        "2020-03-30": 0.25
+      }
+    },
+    "XLF": {
+      "first_date": "2000-01-03",
+      "last_date": "2026-08-28",
+      "row_count": 6704,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.18232190463011722,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 12.487661,
+      "n_dividend_events": 106,
+      "splits_detected": {
+        "2016-09-19": 1.231
+      }
+    },
+    "SPY": {
+      "first_date": "2000-01-03",
+      "last_date": "2026-08-28",
+      "row_count": 6704,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.13557756546715893,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 102.254,
+      "n_dividend_events": 107,
+      "splits_detected": {}
+    },
+    "QQQ": {
+      "first_date": "2000-01-03",
+      "last_date": "2026-08-28",
+      "row_count": 6704,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.15565310898415197,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 26.829,
+      "n_dividend_events": 89,
+      "splits_detected": {
+        "2000-03-20": 2.0
+      }
+    },
+    "IWM": {
+      "first_date": "2000-05-26",
+      "last_date": "2026-08-28",
+      "row_count": 6603,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.14233508929812988,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 38.352,
+      "n_dividend_events": 106,
+      "splits_detected": {
+        "2005-06-09": 2.0
+      }
+    },
+    "TLT": {
+      "first_date": "2002-07-30",
+      "last_date": "2026-08-28",
+      "row_count": 6060,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.07250323684345172,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 84.446,
+      "n_dividend_events": 287,
+      "splits_detected": {}
+    },
+    "SHY": {
+      "first_date": "2002-07-30",
+      "last_date": "2026-08-28",
+      "row_count": 6060,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.009924880321576346,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 38.096000000000004,
+      "n_dividend_events": 288,
+      "splits_detected": {}
+    },
+    "SCHD": {
+      "first_date": "2011-10-20",
+      "last_date": "2026-08-28",
+      "row_count": 3735,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 0,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.10476349104468108,
+      "n_abs_return_gt_20pct": 0,
+      "total_dividends_paid": 8.984668000000001,
+      "n_dividend_events": 59,
+      "splits_detected": {
+        "2024-10-11": 3.0
+      }
+    },
+    "CL=F": {
+      "first_date": "2000-08-23",
+      "last_date": "2026-08-28",
+      "row_count": 6532,
+      "n_nan_close": 0,
+      "n_nan_adj_close": 0,
+      "n_zero_volume_days": 13,
+      "n_duplicate_dates": 0,
+      "max_abs_daily_log_return": 0.3196336300150673,
+      "n_abs_return_gt_20pct": 7,
+      "total_dividends_paid": 0.0,
+      "n_dividend_events": 0,
+      "splits_detected": {}
+    }
+  },
+  "macro": {
+    "T10Y2Y": {
+      "first_date": "2000-01-03",
+      "last_date": "2026-08-28",
+      "row_count": 6955,
+      "n_nan": 287,
+      "min": -1.08,
+      "max": 2.91
+    }
+  },
+  "issues": [
+    "CL=F has non-positive closes (negative crude, 2020-04-20): log-ratio spreads on this series are undefined; excluded from the search space"
+  ],
+  "total_return_consistency": {
+    "GDX/GLD": {
+      "annual_drift_adjusted": -0.05356743620181631,
+      "annual_drift_unadjusted": -0.061477350167989796,
+      "difference": 0.007909913966173486,
+      "n_obs": 5100,
+      "comment": "difference is the dividend-yield gap between the legs; the pipeline uses adj_close for BOTH legs everywhere"
+    },
+    "XOP/XLE": {
+      "annual_drift_adjusted": -0.061116671159373935,
+      "annual_drift_unadjusted": -0.04343784601562246,
+      "difference": -0.017678825143751478,
+      "n_obs": 5078,
+      "comment": "difference is the dividend-yield gap between the legs; the pipeline uses adj_close for BOTH legs everywhere"
+    },
+    "IWM/SPY": {
+      "annual_drift_adjusted": -0.008637790952905771,
+      "annual_drift_unadjusted": -0.0029390647820824118,
+      "difference": -0.005698726170823359,
+      "n_obs": 6603,
+      "comment": "difference is the dividend-yield gap between the legs; the pipeline uses adj_close for BOTH legs everywhere"
+    }
+  },
+  "clf_roll": {
+    "CL=F": {
+      "n_flagged_roll_gaps": 2,
+      "flagged_dates_sample": [
+        "2001-09-24",
+        "2020-03-09"
+      ],
+      "n_nonpositive_close": 1,
+      "nonpositive_dates": [
+        "2020-04-20"
+      ],
+      "min_close": -37.630001068115234,
+      "handling": "CL=F is NOT used by any feature in the M1 search space; kept in the snapshot as a data asset only. Two independent blockers for log-ratio spreads: (a) front-month roll gaps, (b) a negative settlement price on 2020-04-20 that makes log() undefined. Any future use must be built on returns with these dates excluded."
+    }
+  },
+  "calendar": {
+    "union_first_date": "2000-01-03",
+    "union_last_date": "2026-08-28",
+    "union_rows": 6704,
+    "common_window_first_date": "2011-10-20",
+    "common_window_last_date": "2026-08-28",
+    "common_window_rows": 3735,
+    "rows_with_any_missing": 2969,
+    "per_ticker_first_date": {
+      "GLD": "2004-11-18",
+      "GDX": "2006-05-22",
+      "XLE": "2000-01-03",
+      "XOP": "2006-06-22",
+      "XLF": "2000-01-03",
+      "SPY": "2000-01-03",
+      "QQQ": "2000-01-03",
+      "IWM": "2000-05-26",
+      "TLT": "2002-07-30",
+      "SHY": "2002-07-30",
+      "SCHD": "2011-10-20"
+    },
+    "research_start_ex_SCHD": "2006-06-22"
+  },
+  "splits": {
+    "SCHD@2024-10-10": {
+      "expected_ratio": 3.0,
+      "found_in_snapshot": true,
+      "observed_ex_date": "2024-10-11",
+      "observed_ratio": 3.0,
+      "max_abs_log_move_around_split": 0.011748277585949651,
+      "back_adjusted_ok": true
+    }
+  }
+}

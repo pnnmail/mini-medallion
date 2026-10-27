@@ -1,0 +1,6 @@
+cls,name,K,regime,sources,mde,target_effect,n_multiplier_needed,verdict
+1,feature -> return,59,returns,M0 search (56 return/direction targets) + M5-post confound (3),0.13566147582444524,0.0556,5.9533784557174,UNANSWERABLE_IN_PRINCIPLE
+2,feature -> volatility,656,volatility,M0 vol targets (42) + M1 N2 HAR baseline (270) + M1 N3 incremental (255) + M2sup P0 universe (89),0.10186296400553532,0.16012625981785555,0.4046760469203535,ANSWERABLE
+3,decision comparisons by Sharpe,469,decision,M1 N4 (16) + M2sup P2 (148) P3 (9) + M2 N0 (12) N2 (40) N3 (20) N4 (12) N5 (12) N6 (200),0.082726,0.042,3.879586777777777,UNDERPOWERED
+4,structural identities and decompositions,12,algebraic,M2 N1 (12),0.0,,0.0,ANSWERABLE
+5,calibration facts,72,volatility,M0 M7 SCHD intraday legs (72),0.08896433090339079,0.16012625981785555,0.3086787367783985,ANSWERABLE

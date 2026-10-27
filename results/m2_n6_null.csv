@@ -1,0 +1,5 @@
+instrument,n_configs,n_configs_dropped_as_duplicates,n_obs,null_max_abs_t_p95,observed_max_abs_t,best_config,best_rw_p,n_rw_rejected,beats_null
+SPY,49,0,1259,3.0227529855980393,2.8170904462370707,"(0.25, 3, 1.0)",0.07,0,False
+SCHD,49,0,1259,3.258162960054254,2.848866220258867,"(0.0, 1, 1.5)",0.111,0,False
+TLT,49,0,1259,2.7809944512145575,1.4459921183120967,"(1.0, 3, 1.5)",0.66,0,False
+IWM,49,0,1259,3.2755690165874016,2.5426231294704387,"(0.25, 5, 1.0)",0.194,0,False

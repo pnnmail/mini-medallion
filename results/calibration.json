@@ -1,0 +1,409 @@
+{
+  "train_window": [
+    "2006-01-01",
+    "2015-12-31"
+  ],
+  "tickers": [
+    "SPY",
+    "QQQ",
+    "SCHD",
+    "IWM"
+  ],
+  "A_overnight_intraday": {
+    "per_ticker": {
+      "SPY": {
+        "n_days": 2516,
+        "mean_overnight_bps": 2.646433519576939,
+        "mean_intraday_bps": 0.8590544203169505,
+        "t_overnight": 1.794820220142724,
+        "t_intraday": 0.4211196878243954,
+        "cum_overnight_pct": 81.63263211076834,
+        "cum_intraday_pct": 8.766001126802083,
+        "overnight_dominates": true
+      },
+      "QQQ": {
+        "n_days": 2516,
+        "mean_overnight_bps": 4.105594059512486,
+        "mean_intraday_bps": 1.106356750002577,
+        "t_overnight": 2.785463450181406,
+        "t_intraday": 0.48834223310468106,
+        "cum_overnight_pct": 162.14225611881804,
+        "cum_intraday_pct": 12.250846981454742,
+        "overnight_dominates": true
+      },
+      "SCHD": {
+        "n_days": 1055,
+        "mean_overnight_bps": 8.859523186948643,
+        "mean_intraday_bps": -3.3256837393372485,
+        "t_overnight": 5.725855402451035,
+        "t_intraday": -1.821311146390153,
+        "cum_overnight_pct": 151.16566609393115,
+        "cum_intraday_pct": -30.895682352743393,
+        "overnight_dominates": true
+      },
+      "IWM": {
+        "n_days": 2516,
+        "mean_overnight_bps": 3.302318025520908,
+        "mean_intraday_bps": 0.5857084644657286,
+        "t_overnight": 1.9556458675993065,
+        "t_intraday": 0.20990830276704697,
+        "cum_overnight_pct": 109.69674212301919,
+        "cum_intraday_pct": -9.467855521375762,
+        "overnight_dominates": true
+      }
+    },
+    "pooled_overnight_bps": 4.728467197889744,
+    "pooled_intraday_bps": -0.19364102613799813,
+    "n_tickers_overnight_dominant": 4,
+    "expected_sign": "overnight > intraday",
+    "passed": true
+  },
+  "B_short_term_reversal": {
+    "cells": [
+      {
+        "ticker": "SPY",
+        "past_h": 1,
+        "fwd_h": 1,
+        "ic": -0.04115207231838282,
+        "t_stat_nw": -2.159109596090385,
+        "n": 2515
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 1,
+        "fwd_h": 3,
+        "ic": -0.043028806200602523,
+        "t_stat_nw": -1.9388914386114784,
+        "n": 2513
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 1,
+        "fwd_h": 5,
+        "ic": -0.061779412132050224,
+        "t_stat_nw": -2.9524314647464713,
+        "n": 2511
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 3,
+        "fwd_h": 1,
+        "ic": -0.03569835127276344,
+        "t_stat_nw": -1.6637732404890282,
+        "n": 2513
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 3,
+        "fwd_h": 3,
+        "ic": -0.06939844416138338,
+        "t_stat_nw": -1.77902910680418,
+        "n": 2511
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 3,
+        "fwd_h": 5,
+        "ic": -0.09326948743650647,
+        "t_stat_nw": -2.201291107494748,
+        "n": 2509
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 5,
+        "fwd_h": 1,
+        "ic": -0.0540395634938901,
+        "t_stat_nw": -1.7716621209837253,
+        "n": 2511
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 5,
+        "fwd_h": 3,
+        "ic": -0.09852542949230783,
+        "t_stat_nw": -1.9667404482602902,
+        "n": 2509
+      },
+      {
+        "ticker": "SPY",
+        "past_h": 5,
+        "fwd_h": 5,
+        "ic": -0.11314196562985245,
+        "t_stat_nw": -1.9195600790641598,
+        "n": 2507
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 1,
+        "fwd_h": 1,
+        "ic": -0.006579973418231657,
+        "t_stat_nw": -1.3314730887810506,
+        "n": 2515
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 1,
+        "fwd_h": 3,
+        "ic": -0.02571110620948181,
+        "t_stat_nw": -1.5479487614491865,
+        "n": 2513
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 1,
+        "fwd_h": 5,
+        "ic": -0.04104651205548973,
+        "t_stat_nw": -2.139366413318943,
+        "n": 2511
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 3,
+        "fwd_h": 1,
+        "ic": -0.02079057189253851,
+        "t_stat_nw": -1.45605701326917,
+        "n": 2513
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 3,
+        "fwd_h": 3,
+        "ic": -0.04089272790779727,
+        "t_stat_nw": -1.5330385991566902,
+        "n": 2511
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 3,
+        "fwd_h": 5,
+        "ic": -0.05838194317031047,
+        "t_stat_nw": -1.5994751104525804,
+        "n": 2509
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 5,
+        "fwd_h": 1,
+        "ic": -0.023007407409670756,
+        "t_stat_nw": -1.500323160197489,
+        "n": 2511
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 5,
+        "fwd_h": 3,
+        "ic": -0.058651395759110624,
+        "t_stat_nw": -1.4833795836066985,
+        "n": 2509
+      },
+      {
+        "ticker": "QQQ",
+        "past_h": 5,
+        "fwd_h": 5,
+        "ic": -0.073841732254214,
+        "t_stat_nw": -1.4054860873265125,
+        "n": 2507
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 1,
+        "fwd_h": 1,
+        "ic": -0.02314342865465078,
+        "t_stat_nw": 0.39221676078580175,
+        "n": 1054
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 1,
+        "fwd_h": 3,
+        "ic": -0.00533968033460227,
+        "t_stat_nw": -0.2787806488284786,
+        "n": 1052
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 1,
+        "fwd_h": 5,
+        "ic": -0.07489910827434633,
+        "t_stat_nw": -2.0319551637412974,
+        "n": 1050
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 3,
+        "fwd_h": 1,
+        "ic": -0.006821024490494832,
+        "t_stat_nw": -0.19016627215291382,
+        "n": 1052
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 3,
+        "fwd_h": 3,
+        "ic": -0.046606054028944625,
+        "t_stat_nw": -1.5501511440892304,
+        "n": 1050
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 3,
+        "fwd_h": 5,
+        "ic": -0.09379728793333897,
+        "t_stat_nw": -2.9545357358648623,
+        "n": 1048
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 5,
+        "fwd_h": 1,
+        "ic": -0.05039130854018447,
+        "t_stat_nw": -1.3380954549295205,
+        "n": 1050
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 5,
+        "fwd_h": 3,
+        "ic": -0.07355712328916449,
+        "t_stat_nw": -2.324354507110847,
+        "n": 1048
+      },
+      {
+        "ticker": "SCHD",
+        "past_h": 5,
+        "fwd_h": 5,
+        "ic": -0.10939359774311232,
+        "t_stat_nw": -3.2813866760308534,
+        "n": 1046
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 1,
+        "fwd_h": 1,
+        "ic": -0.0333924718581256,
+        "t_stat_nw": -2.3099920354760983,
+        "n": 2515
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 1,
+        "fwd_h": 3,
+        "ic": -0.03885937927538531,
+        "t_stat_nw": -1.7399203873596552,
+        "n": 2513
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 1,
+        "fwd_h": 5,
+        "ic": -0.06131402853749805,
+        "t_stat_nw": -3.045285771218004,
+        "n": 2511
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 3,
+        "fwd_h": 1,
+        "ic": -0.03179729759577958,
+        "t_stat_nw": -1.451404718218651,
+        "n": 2513
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 3,
+        "fwd_h": 3,
+        "ic": -0.06518713162269207,
+        "t_stat_nw": -1.9539265447495326,
+        "n": 2511
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 3,
+        "fwd_h": 5,
+        "ic": -0.08937738500471921,
+        "t_stat_nw": -2.2423017230016753,
+        "n": 2509
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 5,
+        "fwd_h": 1,
+        "ic": -0.0655168187928308,
+        "t_stat_nw": -2.2128260370355295,
+        "n": 2511
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 5,
+        "fwd_h": 3,
+        "ic": -0.09019268056821265,
+        "t_stat_nw": -2.113824234401667,
+        "n": 2509
+      },
+      {
+        "ticker": "IWM",
+        "past_h": 5,
+        "fwd_h": 5,
+        "ic": -0.10423507025326556,
+        "t_stat_nw": -1.9002802558260448,
+        "n": 2507
+      }
+    ],
+    "mean_ic": -0.05618771608366478,
+    "fraction_negative": 1.0,
+    "ic_1d_1d": -0.026066986562347717,
+    "ic_5d_5d": -0.10015309147011107,
+    "stronger_at_short_horizon": false,
+    "horizon_note": "the gate is on SIGN, which is correct in 100% of cells. The secondary expectation -- that reversal is strongest at the shortest horizon -- is NOT confirmed in this sample: |IC(5d->5d)|=0.1002 exceeds |IC(1d->1d)|=0.0261. Reported, not rationalised.",
+    "expected_sign": "negative",
+    "passed": true
+  },
+  "C_tsmom_12_1": {
+    "cells": [
+      {
+        "ticker": "SPY",
+        "n": 107,
+        "ic": -0.04408393581378946,
+        "beta": 0.0053803726816001995,
+        "t_stat_nw": 0.15619673157732764,
+        "mean_ret_when_positive": 0.008443388837579849,
+        "mean_ret_when_negative": -0.007520742765607503
+      },
+      {
+        "ticker": "QQQ",
+        "n": 107,
+        "ic": -0.08310311722408355,
+        "beta": -0.007076696207760897,
+        "t_stat_nw": -0.21652420893468793,
+        "mean_ret_when_positive": 0.011615239338428977,
+        "mean_ret_when_negative": -0.0019959153493328487
+      },
+      {
+        "ticker": "SCHD",
+        "n": 38,
+        "ic": 0.1353539774592406,
+        "beta": 0.009355136197017009,
+        "t_stat_nw": 0.10686847862161974,
+        "mean_ret_when_positive": 0.009103107272232082,
+        "mean_ret_when_negative": 0.025748473333092676
+      },
+      {
+        "ticker": "IWM",
+        "n": 107,
+        "ic": 0.018897313818844415,
+        "beta": 6.523220283566226e-05,
+        "t_stat_nw": 0.0017484160597207026,
+        "mean_ret_when_positive": 0.008477854338252915,
+        "mean_ret_when_negative": -0.0049897752276099605
+      }
+    ],
+    "mean_ic": 0.006766059560053004,
+    "expected_sign": "positive",
+    "passed": true,
+    "n_tickers_with_expected_sign": 2,
+    "n_tickers": 4,
+    "evidence_strength": "WEAK -- the pooled sign is correct but only 2/4 tickers agree and every |t| is far below 1, so this gate confirms the engine is not sign-flipped and nothing more",
+    "gate_note": "sign only. ~120 monthly observations means that at a true Sharpe of 0.4 the expected t is about 1.8; demanding significance here would fail a working pipeline for lack of power, not for being broken."
+  },
+  "GATE": "PASSED"
+}

@@ -1,0 +1,114 @@
+{
+  "test_exposure_ledger": [
+    {
+      "exposure_id": "M0-1",
+      "project_milestone": "M0",
+      "script": "scripts/m5_search.py",
+      "logged_at_the_time": true,
+      "split_name": "TEST",
+      "instruments": "spread/asset universe of M0",
+      "n_models": 98,
+      "n_rows": 1420,
+      "statistics_seen": "IC, Newey-West t, net Sharpe for all 98 M0 hypotheses",
+      "printed_to_console": "top-8 by |t| only; full table written to signals.csv",
+      "values_seen": "max |t| on TEST reached 6.427 for rvol_TLT_10_lag0",
+      "direction_seen": "the single null-beating candidate was STRONGER on TEST than on TRAIN",
+      "contaminates": "any future question about the M0 feature families on 2021+ data",
+      "robustness_of_current_conclusion": "n/a -- this access belongs to M0, which concluded NO ROBUST EDGE and did not act on it"
+    },
+    {
+      "exposure_id": "M1-1",
+      "project_milestone": "M1",
+      "script": "scripts/n5_test_and_report.py",
+      "logged_at_the_time": true,
+      "split_name": "TEST",
+      "instruments": "SPY, SCHD, TLT, IWM",
+      "n_models": 255,
+      "n_rows": 5680,
+      "statistics_seen": "incremental t on 255 candidates; vol-targeting Sharpe for 16 strategies; full-sample crisis analysis",
+      "printed_to_console": "top-12 candidates and all 16 strategy rows",
+      "values_seen": "TLT buy-and-hold Sharpe on TEST is negative (-0.58); vol-targeting advantage on TEST ranged -0.150 to +0.050",
+      "direction_seen": "8 of 16 strategies flipped sign from development to TEST",
+      "contaminates": "vol targeting on these four instruments after 2021",
+      "robustness_of_current_conclusion": "n/a -- belongs to M1, which concluded NO USEFUL IMPROVEMENT"
+    },
+    {
+      "exposure_id": "M2sup-1",
+      "project_milestone": "M2-superseded",
+      "script": "scripts/p1_decomposition.py",
+      "logged_at_the_time": false,
+      "split_name": "TEST",
+      "instruments": "SPY, SCHD, TLT, IWM",
+      "n_models": 23,
+      "n_rows": 1410,
+      "statistics_seen": "exposure term, timing term, delta mean P&L, delta Sharpe vs HAR, QLIKE and turnover for every model in the universe, ON THE TEST SPLIT",
+      "printed_to_console": "the HAR+log_vix row for all four instruments, including its TEST delta Sharpe",
+      "values_seen": "{\"SPY\": {\"delta_sharpe_TEST\": 0.00105, \"timing_term_ann_TEST\": -0.0007, \"exposure_term_ann_TEST\": -0.00177}, \"SCHD\": {\"delta_sharpe_TEST\": 0.08447, \"timing_term_ann_TEST\": 0.00541, \"exposure_term_ann_TEST\": 0.00293}, \"TLT\": {\"delta_sharpe_TEST\": 0.06988, \"timing_term_ann_TEST\": 0.00727, \"exposure_term_ann_TEST\": -0.00143}, \"IWM\": {\"delta_sharpe_TEST\": -0.01126, \"timing_term_ann_TEST\": -0.00175, \"exposure_term_ann_TEST\": 0.00149}}",
+      "direction_seen": "THE MOST CONTAMINATING ITEM IN THE PROJECT: this is the TEST-period value of exactly the quantity the real M2's N0 tests. SCHD +0.084 and TLT +0.070 on TEST are far LARGER than their development values (+0.020, +0.014); SPY collapses to +0.001 and IWM turns negative (-0.011).",
+      "contaminates": "any future statement about the HAR vs HAR+log_vix gap on these instruments after 2021, and more weakly any vol-forecast comparison on the same panel",
+      "robustness_of_current_conclusion": "The current M2 conclusion IS robust to this, for a structural reason. M2 ended on a POWER argument, not on a result: 'the gap is too small to distinguish' follows from the measured rho (0.986-0.996), the resulting standard error (0.020-0.064) and the step-function weight path (82-331 distinct levels), none of which uses TEST. One cannot overfit toward the conclusion that nothing can be resolved. Note the direction of the temptation: the contaminating values would have pushed TOWARD claiming a real effect on SCHD and TLT, and the conclusion went the other way."
+    },
+    {
+      "exposure_id": "M2sup-2",
+      "project_milestone": "M2-superseded",
+      "script": "scripts/p4_test_and_report.py",
+      "logged_at_the_time": true,
+      "split_name": "TEST",
+      "instruments": "SPY, SCHD, TLT, IWM",
+      "n_models": 23,
+      "n_rows": 5640,
+      "statistics_seen": "selector race B -- rank correlation of three selectors with TEST Sharpe, the model each selector picked, its TEST Sharpe, plus random-choice, oracle and baseline reference lines",
+      "printed_to_console": "all 12 selector x instrument rows",
+      "values_seen": "{\"SPY\": {\"baseline_HAR_sharpe_TEST\": 0.9061, \"random_choice_TEST\": 0.9077, \"oracle_TEST\": 0.9522}, \"SCHD\": {\"baseline_HAR_sharpe_TEST\": 0.7588, \"random_choice_TEST\": 0.7838, \"oracle_TEST\": 0.8734}, \"TLT\": {\"baseline_HAR_sharpe_TEST\": -0.5762, \"random_choice_TEST\": -0.5592, \"oracle_TEST\": -0.5064}, \"IWM\": {\"baseline_HAR_sharpe_TEST\": 0.2841, \"random_choice_TEST\": 0.3027, \"oracle_TEST\": 0.3593}}",
+      "direction_seen": "every selector flipped sign between race A and race B; TLT is negative-Sharpe throughout the TEST period",
+      "contaminates": "model-selection questions on this panel after 2021",
+      "robustness_of_current_conclusion": "The real M2 never used a selector race and never referenced these numbers; its N0-N6 ran on TRAIN and VALIDATION only."
+    }
+  ],
+  "unlogged_access_disclosed": "scripts/p1_decomposition.py",
+  "error_classes": {
+    "N1|ITERATION: volatility-persistence gate respecified": "SPECIFICATION_CHANGE_AFTER_RESULT",
+    "N5|ITERATION after seeing TEST: the VERDICT RULE": "REPORTING_RULE_CHANGE",
+    "P2|ITERATION after seeing results: H2 was pre-registered": "ALGEBRAIC_ERROR",
+    "P4|RERUN of the reporting stage": "RERUN_NO_NEW_HYPOTHESIS"
+  },
+  "trial_counts": [
+    {
+      "project_milestone": "M0",
+      "n_rows": 14,
+      "raw_n_tests": 199651.0,
+      "selection_relevant_trials": 173.0
+    },
+    {
+      "project_milestone": "M1",
+      "n_rows": 23,
+      "raw_n_tests": 2205.0,
+      "selection_relevant_trials": 541.0
+    },
+    {
+      "project_milestone": "M2-superseded",
+      "n_rows": 10,
+      "raw_n_tests": 1126.0,
+      "selection_relevant_trials": 246.0
+    },
+    {
+      "project_milestone": "M2",
+      "n_rows": 11,
+      "raw_n_tests": 548.0,
+      "selection_relevant_trials": 308.0
+    }
+  ],
+  "cumulative_decision": {
+    "thresholds_are_calibrated": "per milestone, not cumulatively",
+    "selection_relevant_trials_local": {
+      "M0": 173.0,
+      "M1": 541.0,
+      "M2-superseded": 246.0,
+      "M2": 308.0
+    },
+    "selection_relevant_trials_cumulative": 1268,
+    "excluded_as_non_search": 202262,
+    "why": "A cumulative Romano-Wolf correction across three milestones would suppress everything, including the one structural result the project has (the covariance identity). But that is a cost, not a justification, so the decision is recorded rather than left implicit. The defensible part: each milestone asked a DIFFERENT question of the data -- M0 searched for directional edge, M1 asked whether known volatility predictability changes a sizing decision, M2 asked why a more accurate forecast was a worse input. They are not three passes over one hypothesis space. The indefensible part: they used the same instruments and the same sample, so cross-milestone selection is real and uncorrected.",
+    "practical_consequence": "no finding in this project should be treated as having survived a cumulative correction. The only result reported as durable -- the exact E[w*r] = E[w]E[r] + Cov(w,r) decomposition -- is an algebraic identity and needs no multiplicity correction at all, which is precisely why it is the one that survives."
+  }
+}

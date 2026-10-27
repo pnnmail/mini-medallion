@@ -1,0 +1,5 @@
+access_id,timestamp,split_name,accessed_by,experiment_id,n_rows_read,note
+5a5e9eb207a5,2026-08-29 20:25:03,TEST,scripts/m5_search.py,M5-41d75e07,1420,"single scheduled access; all 98 hypotheses evaluated in one pass; no parameter, window, target or pair changed afterwards"
+999d467509fb,2026-08-29 22:55:05,TEST,scripts/n5_test_and_report.py,N5-a0481ac1,5680,"single scheduled access; all incremental candidates and all vol-targeting strategies evaluated in one pass; no parameter, window, model or instrument changed afterwards"
+36d105442837,2026-08-30 08:45:36,TEST,scripts/p4_test_and_report.py,P4-b1b797ea,5640,"single scheduled access; race B and the TEST-side decomposition for all 89 pairs evaluated in one pass; no selector, model or constant changed afterwards"
+f5a13b5b962b,2026-08-30 09:09:40,TEST,scripts/p1_decomposition.py (RETROACTIVE),M2-superseded,89,DISCLOSURE: this access happened during the superseded improvised M2 and was NOT logged at the time. It evaluated the TEST split for all 23 models on all four instruments and printed the TEST delta Sharpe of HAR+log_vix. See test_exposure_ledger row M2sup-1 for exactly what was seen.

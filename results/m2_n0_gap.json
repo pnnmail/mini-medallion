@@ -1,0 +1,125 @@
+{
+  "pair": {
+    "slow": "HAR",
+    "fast": "HAR+log_vix",
+    "cap": 1.0,
+    "sample": "TRAIN + VALIDATION (M1 development sample)"
+  },
+  "estimator_fingerprint": "23a37efddce50a20",
+  "per_instrument": [
+    {
+      "instrument": "SPY",
+      "n_days": 6253,
+      "sharpe_slow": 0.575471194076601,
+      "sharpe_fast": 0.5336293766740421,
+      "sharpe_diff": 0.041841817402558865,
+      "rho_strategies": 0.9897233494101425,
+      "se_single_theory": 0.21673435635469782,
+      "se_paired_theory": 0.03107195315806337,
+      "se_diff_ledoit_wolf": 0.02763390951918039,
+      "z_lw": 1.5141475864468947,
+      "p_lw": 0.12998841171781184,
+      "ci_lo_lw": -0.012320645255034705,
+      "ci_hi_lw": 0.09600428006015244,
+      "p_bootstrap_paired": 0.1174,
+      "boot_se": 0.026738166675550807,
+      "p_null_harness_mean_diff": 0.0235,
+      "hac_lag": 10
+    },
+    {
+      "instrument": "SCHD",
+      "n_days": 1535,
+      "sharpe_slow": 0.6352741086884393,
+      "sharpe_fast": 0.6155851299362406,
+      "sharpe_diff": 0.019688978752198622,
+      "rho_strategies": 0.9863563604346555,
+      "se_single_theory": 0.4441807760187618,
+      "se_paired_theory": 0.07337360801366133,
+      "se_diff_ledoit_wolf": 0.0641535845708417,
+      "z_lw": 0.30690379787675054,
+      "p_lw": 0.7589165982053072,
+      "ci_lo_lw": -0.10605204700665112,
+      "ci_hi_lw": 0.14543000451104837,
+      "p_bootstrap_paired": 0.7552,
+      "boot_se": 0.06500257328363238,
+      "p_null_harness_mean_diff": 0.462,
+      "hac_lag": 7
+    },
+    {
+      "instrument": "TLT",
+      "n_days": 3776,
+      "sharpe_slow": 0.5489138677094929,
+      "sharpe_fast": 0.5349681402725298,
+      "sharpe_diff": 0.013945727436963012,
+      "rho_strategies": 0.9964906247786322,
+      "se_single_theory": 0.27711274833998867,
+      "se_paired_theory": 0.02321594713139776,
+      "se_diff_ledoit_wolf": 0.02013009139563584,
+      "z_lw": 0.6927801351158503,
+      "p_lw": 0.4884475404433226,
+      "ci_lo_lw": -0.02550925169848323,
+      "ci_hi_lw": 0.05340070657240926,
+      "p_bootstrap_paired": 0.4918,
+      "boot_se": 0.020496062221632326,
+      "p_null_harness_mean_diff": 0.439,
+      "hac_lag": 8
+    },
+    {
+      "instrument": "IWM",
+      "n_days": 3776,
+      "sharpe_slow": 0.40854569069799657,
+      "sharpe_fast": 0.4000306058717694,
+      "sharpe_diff": 0.008515084826227176,
+      "rho_strategies": 0.9926659443473078,
+      "se_single_theory": 0.268899301874198,
+      "se_paired_theory": 0.03256692643306087,
+      "se_diff_ledoit_wolf": 0.02997976430579296,
+      "z_lw": 0.28402774416014387,
+      "p_lw": 0.7763891190543228,
+      "ci_lo_lw": -0.05024525321312702,
+      "ci_hi_lw": 0.06727542286558137,
+      "p_bootstrap_paired": 0.7742,
+      "boot_se": 0.029230664624995302,
+      "p_null_harness_mean_diff": 0.893,
+      "hac_lag": 8
+    }
+  ],
+  "difference_series_correlation": {
+    "SPY": {
+      "SPY": 1.0,
+      "SCHD": 0.47410146762046057,
+      "TLT": -0.04686028216863303,
+      "IWM": 0.3043000128372112
+    },
+    "SCHD": {
+      "SPY": 0.47410146762046057,
+      "SCHD": 1.0,
+      "TLT": -0.027501758969757685,
+      "IWM": 0.3056877470684532
+    },
+    "TLT": {
+      "SPY": -0.04686028216863303,
+      "SCHD": -0.027501758969757685,
+      "TLT": 1.0,
+      "IWM": -0.055608904277888054
+    },
+    "IWM": {
+      "SPY": 0.3043000128372112,
+      "SCHD": 0.3056877470684532,
+      "TLT": -0.055608904277888054,
+      "IWM": 1.0
+    }
+  },
+  "sign_test": {
+    "n_instruments": 4,
+    "n_positive": 4,
+    "effective_n_tests": 3.8436773945699763,
+    "p_naive": 0.0625,
+    "p_dependence_corrected": 0.0625,
+    "note": "the naive p treats four correlated instruments as four independent bets; the corrected one uses the eigenvalue-based effective count"
+  },
+  "n_significant_lw": 0,
+  "n_significant_bootstrap": 0,
+  "gap_status": "GAP_UNDERPOWERED",
+  "power_note": "SE of a single Sharpe over this sample is about 0.302; the largest observed gap is 0.042. Only the pairing gives any power, and the measured rho between the two strategies is 0.986-0.996."
+}

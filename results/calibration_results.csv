@@ -1,0 +1,52 @@
+test_name,ticker,detail,metric,value,expected_sign,actual_sign,passed
+A_overnight_intraday,SPY,mean_overnight_bps,mean_overnight_bps,2.646433519576939,overnight > intraday,n/a,
+A_overnight_intraday,SPY,mean_intraday_bps,mean_intraday_bps,0.8590544203169505,overnight > intraday,n/a,
+A_overnight_intraday,QQQ,mean_overnight_bps,mean_overnight_bps,4.105594059512486,overnight > intraday,n/a,
+A_overnight_intraday,QQQ,mean_intraday_bps,mean_intraday_bps,1.106356750002577,overnight > intraday,n/a,
+A_overnight_intraday,SCHD,mean_overnight_bps,mean_overnight_bps,8.859523186948643,overnight > intraday,n/a,
+A_overnight_intraday,SCHD,mean_intraday_bps,mean_intraday_bps,-3.3256837393372485,overnight > intraday,n/a,
+A_overnight_intraday,IWM,mean_overnight_bps,mean_overnight_bps,3.302318025520908,overnight > intraday,n/a,
+A_overnight_intraday,IWM,mean_intraday_bps,mean_intraday_bps,0.5857084644657286,overnight > intraday,n/a,
+A_overnight_intraday,POOLED,4/4 tickers overnight-dominant,mean_overnight_minus_intraday_bps,4.922108224027742,positive,positive,True
+B_short_term_reversal,SPY,past1->fwd1,ic,-0.04115207231838282,negative,negative,True
+B_short_term_reversal,SPY,past1->fwd3,ic,-0.043028806200602523,negative,negative,True
+B_short_term_reversal,SPY,past1->fwd5,ic,-0.061779412132050224,negative,negative,True
+B_short_term_reversal,SPY,past3->fwd1,ic,-0.03569835127276344,negative,negative,True
+B_short_term_reversal,SPY,past3->fwd3,ic,-0.06939844416138338,negative,negative,True
+B_short_term_reversal,SPY,past3->fwd5,ic,-0.09326948743650647,negative,negative,True
+B_short_term_reversal,SPY,past5->fwd1,ic,-0.0540395634938901,negative,negative,True
+B_short_term_reversal,SPY,past5->fwd3,ic,-0.09852542949230783,negative,negative,True
+B_short_term_reversal,SPY,past5->fwd5,ic,-0.11314196562985245,negative,negative,True
+B_short_term_reversal,QQQ,past1->fwd1,ic,-0.006579973418231657,negative,negative,True
+B_short_term_reversal,QQQ,past1->fwd3,ic,-0.02571110620948181,negative,negative,True
+B_short_term_reversal,QQQ,past1->fwd5,ic,-0.04104651205548973,negative,negative,True
+B_short_term_reversal,QQQ,past3->fwd1,ic,-0.02079057189253851,negative,negative,True
+B_short_term_reversal,QQQ,past3->fwd3,ic,-0.04089272790779727,negative,negative,True
+B_short_term_reversal,QQQ,past3->fwd5,ic,-0.05838194317031047,negative,negative,True
+B_short_term_reversal,QQQ,past5->fwd1,ic,-0.023007407409670756,negative,negative,True
+B_short_term_reversal,QQQ,past5->fwd3,ic,-0.058651395759110624,negative,negative,True
+B_short_term_reversal,QQQ,past5->fwd5,ic,-0.073841732254214,negative,negative,True
+B_short_term_reversal,SCHD,past1->fwd1,ic,-0.02314342865465078,negative,negative,True
+B_short_term_reversal,SCHD,past1->fwd3,ic,-0.00533968033460227,negative,negative,True
+B_short_term_reversal,SCHD,past1->fwd5,ic,-0.07489910827434633,negative,negative,True
+B_short_term_reversal,SCHD,past3->fwd1,ic,-0.006821024490494832,negative,negative,True
+B_short_term_reversal,SCHD,past3->fwd3,ic,-0.046606054028944625,negative,negative,True
+B_short_term_reversal,SCHD,past3->fwd5,ic,-0.09379728793333897,negative,negative,True
+B_short_term_reversal,SCHD,past5->fwd1,ic,-0.05039130854018447,negative,negative,True
+B_short_term_reversal,SCHD,past5->fwd3,ic,-0.07355712328916449,negative,negative,True
+B_short_term_reversal,SCHD,past5->fwd5,ic,-0.10939359774311232,negative,negative,True
+B_short_term_reversal,IWM,past1->fwd1,ic,-0.0333924718581256,negative,negative,True
+B_short_term_reversal,IWM,past1->fwd3,ic,-0.03885937927538531,negative,negative,True
+B_short_term_reversal,IWM,past1->fwd5,ic,-0.06131402853749805,negative,negative,True
+B_short_term_reversal,IWM,past3->fwd1,ic,-0.03179729759577958,negative,negative,True
+B_short_term_reversal,IWM,past3->fwd3,ic,-0.06518713162269207,negative,negative,True
+B_short_term_reversal,IWM,past3->fwd5,ic,-0.08937738500471921,negative,negative,True
+B_short_term_reversal,IWM,past5->fwd1,ic,-0.0655168187928308,negative,negative,True
+B_short_term_reversal,IWM,past5->fwd3,ic,-0.09019268056821265,negative,negative,True
+B_short_term_reversal,IWM,past5->fwd5,ic,-0.10423507025326556,negative,negative,True
+B_short_term_reversal,POOLED,mean IC over 36 cells,ic,-0.05618771608366478,negative,negative,True
+C_tsmom_12_1,SPY,12-1 month momentum,ic,-0.04408393581378946,positive,negative,False
+C_tsmom_12_1,QQQ,12-1 month momentum,ic,-0.08310311722408355,positive,negative,False
+C_tsmom_12_1,SCHD,12-1 month momentum,ic,0.1353539774592406,positive,positive,True
+C_tsmom_12_1,IWM,12-1 month momentum,ic,0.018897313818844415,positive,positive,True
+C_tsmom_12_1,POOLED,mean IC across tickers,ic,0.006766059560053004,positive,positive,True

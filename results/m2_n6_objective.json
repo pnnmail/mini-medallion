@@ -1,0 +1,2088 @@
+{
+  "grid": {
+    "lambdas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "k": [
+      1,
+      3,
+      5,
+      10,
+      20
+    ],
+    "caps": [
+      1.0,
+      1.5
+    ],
+    "n_per_instrument": 50,
+    "n_total": 200
+  },
+  "baseline": {
+    "lambda": 0.0,
+    "k": 1,
+    "cap": 1.0
+  },
+  "null": [
+    {
+      "instrument": "SPY",
+      "n_configs": 49,
+      "n_configs_dropped_as_duplicates": 0,
+      "n_obs": 1259,
+      "null_max_abs_t_p95": 3.0227529855980393,
+      "observed_max_abs_t": 2.8170904462370707,
+      "best_config": "(0.25, 3, 1.0)",
+      "best_rw_p": 0.07,
+      "n_rw_rejected": 0,
+      "beats_null": false
+    },
+    {
+      "instrument": "SCHD",
+      "n_configs": 49,
+      "n_configs_dropped_as_duplicates": 0,
+      "n_obs": 1259,
+      "null_max_abs_t_p95": 3.258162960054254,
+      "observed_max_abs_t": 2.848866220258867,
+      "best_config": "(0.0, 1, 1.5)",
+      "best_rw_p": 0.111,
+      "n_rw_rejected": 0,
+      "beats_null": false
+    },
+    {
+      "instrument": "TLT",
+      "n_configs": 49,
+      "n_configs_dropped_as_duplicates": 0,
+      "n_obs": 1259,
+      "null_max_abs_t_p95": 2.7809944512145575,
+      "observed_max_abs_t": 1.4459921183120967,
+      "best_config": "(1.0, 3, 1.5)",
+      "best_rw_p": 0.66,
+      "n_rw_rejected": 0,
+      "beats_null": false
+    },
+    {
+      "instrument": "IWM",
+      "n_configs": 49,
+      "n_configs_dropped_as_duplicates": 0,
+      "n_obs": 1259,
+      "null_max_abs_t_p95": 3.2755690165874016,
+      "observed_max_abs_t": 2.5426231294704387,
+      "best_config": "(0.25, 5, 1.0)",
+      "best_rw_p": 0.194,
+      "n_rw_rejected": 0,
+      "beats_null": false
+    }
+  ],
+  "rows": [
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.4698277603570624,
+      "sharpe_val": 1.0286368278907907,
+      "turnover_annual": 2.920333813189221,
+      "is_baseline": true
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.45049346137761787,
+      "sharpe_val": 1.099320067818986,
+      "turnover_annual": 6.160400014688876,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.47556680927399825,
+      "sharpe_val": 0.9788969481598152,
+      "turnover_annual": 2.3190851008869995,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.45174971790461826,
+      "sharpe_val": 1.05154605840807,
+      "turnover_annual": 3.936487141948511,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.46766179260307783,
+      "sharpe_val": 0.9007360188661045,
+      "turnover_annual": 1.9842676346841854,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4651886587119333,
+      "sharpe_val": 0.9791733777477913,
+      "turnover_annual": 3.2344764127615817,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.4621697766668411,
+      "sharpe_val": 0.9261028023698141,
+      "turnover_annual": 1.4450805053528313,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.4570599814501367,
+      "sharpe_val": 0.9267776598529213,
+      "turnover_annual": 2.2417075600477903,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4707579620502185,
+      "sharpe_val": 0.8675764816292617,
+      "turnover_annual": 0.9323512071016965,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.45951210613497706,
+      "sharpe_val": 0.8757954506930872,
+      "turnover_annual": 1.4891109175717048,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.45640190440482553,
+      "sharpe_val": 1.0457587920051494,
+      "turnover_annual": 2.8954379387734215,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.4412045357307405,
+      "sharpe_val": 1.1300066765762002,
+      "turnover_annual": 5.693683020272158,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.4522860070798625,
+      "sharpe_val": 0.9020329606127285,
+      "turnover_annual": 1.9726234364341517,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.4453335940589498,
+      "sharpe_val": 1.069560774106148,
+      "turnover_annual": 3.3268140604353595,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.43662778475467107,
+      "sharpe_val": 0.8930827670584182,
+      "turnover_annual": 1.6594261687379148,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4461501020713334,
+      "sharpe_val": 1.0139244758630739,
+      "turnover_annual": 2.877211623609231,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.46803209529884576,
+      "sharpe_val": 0.9043322843433217,
+      "turnover_annual": 1.3469892759527373,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.4590388110179629,
+      "sharpe_val": 0.9724163036747415,
+      "turnover_annual": 2.128964549757087,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4846766388767934,
+      "sharpe_val": 0.8160909911529524,
+      "turnover_annual": 1.0428457870963055,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.48142470825740913,
+      "sharpe_val": 0.8765961781772988,
+      "turnover_annual": 1.4127133647960277,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.433319361787828,
+      "sharpe_val": 0.9521677376635814,
+      "turnover_annual": 3.467075208444952,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.4064308136479816,
+      "sharpe_val": 1.0818858878448443,
+      "turnover_annual": 6.116520917741266,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.4584446299735881,
+      "sharpe_val": 0.9245506214421039,
+      "turnover_annual": 2.1681796676888094,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.45990417699227104,
+      "sharpe_val": 1.047070991202536,
+      "turnover_annual": 3.106206845250302,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.46157321417937464,
+      "sharpe_val": 0.8544757176681189,
+      "turnover_annual": 1.779589781258508,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4466605987674835,
+      "sharpe_val": 0.9874563575887472,
+      "turnover_annual": 2.7394874573028436,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.46931653163800113,
+      "sharpe_val": 0.8432050460325414,
+      "turnover_annual": 1.4490444158583444,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.4603840704224819,
+      "sharpe_val": 0.9668661024538631,
+      "turnover_annual": 2.0120876467617914,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4869804279681872,
+      "sharpe_val": 0.8132476278860656,
+      "turnover_annual": 1.0576580013731602,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.47327682512667796,
+      "sharpe_val": 0.8696773062160469,
+      "turnover_annual": 1.3680126409491904,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.4349885619973265,
+      "sharpe_val": 1.004899504636077,
+      "turnover_annual": 3.142392751983073,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.4198977144684427,
+      "sharpe_val": 1.0848631419273023,
+      "turnover_annual": 6.096691646367316,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.4584987737744487,
+      "sharpe_val": 0.9420097479534216,
+      "turnover_annual": 2.4296985030632463,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.4357647585584565,
+      "sharpe_val": 1.0482406835476017,
+      "turnover_annual": 4.242246144103045,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.420798933972201,
+      "sharpe_val": 0.9281724179256768,
+      "turnover_annual": 2.0033463083338208,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4106015594206255,
+      "sharpe_val": 1.0612214250591565,
+      "turnover_annual": 2.7475335524887976,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.46485221916717323,
+      "sharpe_val": 0.9095000668632015,
+      "turnover_annual": 1.3093986516816551,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.4483107798422062,
+      "sharpe_val": 0.9953974677510754,
+      "turnover_annual": 2.1465319876287006,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.46337003658405923,
+      "sharpe_val": 0.7610807263563704,
+      "turnover_annual": 1.131683640030778,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.4524633878257842,
+      "sharpe_val": 0.9121848102597107,
+      "turnover_annual": 1.3445570431272031,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.427944451960154,
+      "sharpe_val": 1.0009173608170896,
+      "turnover_annual": 3.300797155179493,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.4202125631650151,
+      "sharpe_val": 1.104137521111107,
+      "turnover_annual": 6.195374285363195,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.45739441622108323,
+      "sharpe_val": 1.044382870555505,
+      "turnover_annual": 2.367023277273122,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.4436788772207543,
+      "sharpe_val": 1.1126804477580774,
+      "turnover_annual": 3.6868481910231394,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.4373915430679069,
+      "sharpe_val": 0.9201492432154567,
+      "turnover_annual": 1.7403440188754766,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.42791737973524857,
+      "sharpe_val": 1.0341311078030702,
+      "turnover_annual": 3.0822708751811883,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.40815031992211603,
+      "sharpe_val": 0.8632577022005844,
+      "turnover_annual": 1.3654516261949379,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.41167172156862053,
+      "sharpe_val": 0.9847990712145367,
+      "turnover_annual": 1.7591822395055903,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4557693574356949,
+      "sharpe_val": 0.8519284672957317,
+      "turnover_annual": 1.0701499940055206,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SPY",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.44898101853173716,
+      "sharpe_val": 0.8652507903785391,
+      "turnover_annual": 1.3457938440467712,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": -0.4904858695491343,
+      "sharpe_val": 0.9278356715537948,
+      "turnover_annual": 3.757801418388469,
+      "is_baseline": true
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": -0.7600892687240126,
+      "sharpe_val": 1.0461989636981006,
+      "turnover_annual": 7.596477131487331,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": -0.4541934803734421,
+      "sharpe_val": 0.8911805146369006,
+      "turnover_annual": 1.9540809713044525,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": -0.6646015765395608,
+      "sharpe_val": 0.9909169481815643,
+      "turnover_annual": 4.238954224046856,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": -0.4948729048684327,
+      "sharpe_val": 0.891461499248514,
+      "turnover_annual": 1.8202304494381554,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": -0.6583587811618835,
+      "sharpe_val": 0.9396043519625871,
+      "turnover_annual": 3.09841605715221,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": -0.24889906701394193,
+      "sharpe_val": 0.8021484892546824,
+      "turnover_annual": 1.257764375164917,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": -0.3961952949672279,
+      "sharpe_val": 0.9163058108029069,
+      "turnover_annual": 2.0050531045073314,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": -0.30763830111175666,
+      "sharpe_val": 0.7482652395698988,
+      "turnover_annual": 0.8397020950660733,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": -0.3872469359157181,
+      "sharpe_val": 0.8159601195467584,
+      "turnover_annual": 1.2391545576456093,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": -0.4896153530865122,
+      "sharpe_val": 0.9125095700669361,
+      "turnover_annual": 2.947633044456948,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": -0.7027476778562812,
+      "sharpe_val": 1.046271792361508,
+      "turnover_annual": 6.911933220854714,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": -0.4476958314921225,
+      "sharpe_val": 0.9175816324567629,
+      "turnover_annual": 1.9020974701042745,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": -0.674331708046631,
+      "sharpe_val": 1.0145993385115348,
+      "turnover_annual": 3.4697132246321534,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": -0.4439324119854619,
+      "sharpe_val": 0.8583936175259974,
+      "turnover_annual": 1.6492172451812708,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": -0.6270362427363725,
+      "sharpe_val": 0.9687676179347607,
+      "turnover_annual": 2.819746264534465,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": -0.23689272854351076,
+      "sharpe_val": 0.809457370762535,
+      "turnover_annual": 1.3184324330631365,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": -0.4224251333458278,
+      "sharpe_val": 0.9667584959312505,
+      "turnover_annual": 1.7478782088113511,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": -0.34148091376826517,
+      "sharpe_val": 0.7429843789251128,
+      "turnover_annual": 0.8827714975429839,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": -0.3969817891147279,
+      "sharpe_val": 0.7557902148478925,
+      "turnover_annual": 1.3356680446258498,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": -0.4781859576938732,
+      "sharpe_val": 0.9265461912806183,
+      "turnover_annual": 2.821344871273472,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": -0.7981914155014063,
+      "sharpe_val": 1.0723943779274174,
+      "turnover_annual": 6.383035810983086,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": -0.39970009859397543,
+      "sharpe_val": 0.8852713038324005,
+      "turnover_annual": 1.8602977182889529,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": -0.7460906469093482,
+      "sharpe_val": 0.9833740028933641,
+      "turnover_annual": 3.4545246518689856,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": -0.5396192024214487,
+      "sharpe_val": 0.8755149365234636,
+      "turnover_annual": 1.689109219859071,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": -0.7352387637067028,
+      "sharpe_val": 0.971108928547087,
+      "turnover_annual": 2.964891095058101,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": -0.31320269826383135,
+      "sharpe_val": 0.8190765326415668,
+      "turnover_annual": 1.2948010487008594,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": -0.5907455587905772,
+      "sharpe_val": 0.9221141011253507,
+      "turnover_annual": 1.7745334219778472,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": -0.22714295621117875,
+      "sharpe_val": 0.714661416798056,
+      "turnover_annual": 0.8835898005434413,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": -0.40507945299799497,
+      "sharpe_val": 0.8033460032173104,
+      "turnover_annual": 1.4346242271800456,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": -0.5424220363907842,
+      "sharpe_val": 0.9616167457407913,
+      "turnover_annual": 3.058647393915064,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": -0.781993923675868,
+      "sharpe_val": 1.0262386147077942,
+      "turnover_annual": 6.062328457926962,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": -0.46758248151150483,
+      "sharpe_val": 0.8829883351290713,
+      "turnover_annual": 1.7580379775250146,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": -0.7609906028270053,
+      "sharpe_val": 0.9650796666299458,
+      "turnover_annual": 3.6552500401830876,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": -0.5149346871331709,
+      "sharpe_val": 0.859517989484915,
+      "turnover_annual": 1.506897528275674,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": -0.7262761715746711,
+      "sharpe_val": 0.9569227684186049,
+      "turnover_annual": 3.079618063076961,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": -0.28949582091601794,
+      "sharpe_val": 0.804049973334993,
+      "turnover_annual": 1.28787353604449,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": -0.49391079466712307,
+      "sharpe_val": 0.9064938838800672,
+      "turnover_annual": 1.8992905696126385,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": -0.21661573769246426,
+      "sharpe_val": 0.732079957926992,
+      "turnover_annual": 0.7906578151009072,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": -0.4652593373825984,
+      "sharpe_val": 0.8488484085137091,
+      "turnover_annual": 1.4271271564557706,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": -0.5971769444363669,
+      "sharpe_val": 0.9473932098361377,
+      "turnover_annual": 3.3022510464136636,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": -0.8471165034154802,
+      "sharpe_val": 1.0594060088680841,
+      "turnover_annual": 6.24052653106737,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": -0.5376723175479186,
+      "sharpe_val": 0.847956517747731,
+      "turnover_annual": 2.2475801838621834,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": -0.8202094762463062,
+      "sharpe_val": 1.0149427025856241,
+      "turnover_annual": 4.173816403671219,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": -0.4424062661751381,
+      "sharpe_val": 0.7726107515993168,
+      "turnover_annual": 1.664578523357332,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": -0.7525869981836488,
+      "sharpe_val": 0.9215248969337768,
+      "turnover_annual": 2.992607567641968,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": -0.37363907992552453,
+      "sharpe_val": 0.82525023980387,
+      "turnover_annual": 1.3030305958975585,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": -0.5677364983490799,
+      "sharpe_val": 0.9411797615559732,
+      "turnover_annual": 1.9225546721117583,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": -0.2058237784991937,
+      "sharpe_val": 0.7455486654796523,
+      "turnover_annual": 0.7893955420447052,
+      "is_baseline": false
+    },
+    {
+      "instrument": "SCHD",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": -0.4274193746410791,
+      "sharpe_val": 0.8582622180961332,
+      "turnover_annual": 1.243125620476619,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.5308118750860557,
+      "sharpe_val": 0.6251791798980167,
+      "turnover_annual": 1.0976389672597981,
+      "is_baseline": true
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.5172153488954817,
+      "sharpe_val": 0.6458254143559369,
+      "turnover_annual": 1.7736460044032436,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.47099089494251767,
+      "sharpe_val": 0.6046844714719247,
+      "turnover_annual": 0.7743723330059926,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.5055190890008214,
+      "sharpe_val": 0.6537336416176786,
+      "turnover_annual": 1.2531678436160585,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.4597034081729949,
+      "sharpe_val": 0.6175955276324173,
+      "turnover_annual": 0.6404054980663977,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.5244664650117291,
+      "sharpe_val": 0.6400378019638823,
+      "turnover_annual": 0.9120306607694312,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.504411846318449,
+      "sharpe_val": 0.6158323187531045,
+      "turnover_annual": 0.6384508450197826,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.4804479027358427,
+      "sharpe_val": 0.6756910667955225,
+      "turnover_annual": 0.9739987492868233,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.509539936246944,
+      "sharpe_val": 0.6446265505593806,
+      "turnover_annual": 0.5730667078433005,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.47821559473492636,
+      "sharpe_val": 0.6219568166465658,
+      "turnover_annual": 0.674917020103241,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.5094102235492278,
+      "sharpe_val": 0.6366401788863739,
+      "turnover_annual": 1.096980539155908,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.5119655702784497,
+      "sharpe_val": 0.6478289849126776,
+      "turnover_annual": 1.7607977080785615,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.4899587624595511,
+      "sharpe_val": 0.6064624898830211,
+      "turnover_annual": 0.7727613422215365,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.5094832038294397,
+      "sharpe_val": 0.6592597113592088,
+      "turnover_annual": 1.2655205664955054,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.463013921204547,
+      "sharpe_val": 0.6119913402757923,
+      "turnover_annual": 0.7177863126946536,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4980828704950967,
+      "sharpe_val": 0.6230208361673144,
+      "turnover_annual": 1.0909228655531757,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.47981296314964084,
+      "sharpe_val": 0.6240909872917736,
+      "turnover_annual": 0.6224194356834925,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.46861760808411523,
+      "sharpe_val": 0.6845493008736893,
+      "turnover_annual": 0.9575260617758606,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4874606628173793,
+      "sharpe_val": 0.6510741796225683,
+      "turnover_annual": 0.567393674592849,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.4800786860167831,
+      "sharpe_val": 0.6203968715942354,
+      "turnover_annual": 0.6705938251820835,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.5189647015047346,
+      "sharpe_val": 0.6387831301454364,
+      "turnover_annual": 1.1505627474399032,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.5171362093328351,
+      "sharpe_val": 0.65778646275824,
+      "turnover_annual": 1.7536407627022248,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.47670272273827763,
+      "sharpe_val": 0.6438196054118985,
+      "turnover_annual": 0.7844184299245343,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.4987016328128646,
+      "sharpe_val": 0.6294240825612206,
+      "turnover_annual": 1.0761914647678021,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.5059022351319744,
+      "sharpe_val": 0.6082412028004919,
+      "turnover_annual": 0.6374912394695846,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.5166562342729842,
+      "sharpe_val": 0.627377658383158,
+      "turnover_annual": 1.0811433909159658,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.47485938798894056,
+      "sharpe_val": 0.6280454093827307,
+      "turnover_annual": 0.6356422569872815,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.5305978288267225,
+      "sharpe_val": 0.6264550800571531,
+      "turnover_annual": 0.9197399347404273,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.45790668969272086,
+      "sharpe_val": 0.6435484306731333,
+      "turnover_annual": 0.5684487298835671,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.48608304782225226,
+      "sharpe_val": 0.6337171262634462,
+      "turnover_annual": 0.7628676844593573,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.5217214727642107,
+      "sharpe_val": 0.6197232893975896,
+      "turnover_annual": 0.8422968121352178,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.5061554341650436,
+      "sharpe_val": 0.6744042750608557,
+      "turnover_annual": 1.7327693688984043,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.48547569867366347,
+      "sharpe_val": 0.6370677639939617,
+      "turnover_annual": 0.7095628946812416,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.5047981591300599,
+      "sharpe_val": 0.6771546974178791,
+      "turnover_annual": 0.9757433051088104,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.4639833818988595,
+      "sharpe_val": 0.6236333022268251,
+      "turnover_annual": 0.8016105007128852,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4762441207973319,
+      "sharpe_val": 0.6412925550065619,
+      "turnover_annual": 1.1967588659437127,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.498507979634232,
+      "sharpe_val": 0.6322953767114369,
+      "turnover_annual": 0.6268485283853199,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.4957696442839388,
+      "sharpe_val": 0.6370396981366454,
+      "turnover_annual": 0.9152941096056064,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4702104173589719,
+      "sharpe_val": 0.6432295147852678,
+      "turnover_annual": 0.5678768065307674,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.476160242962805,
+      "sharpe_val": 0.6522541301787657,
+      "turnover_annual": 0.7585457701050978,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.5031699220757698,
+      "sharpe_val": 0.6473923338641301,
+      "turnover_annual": 0.7705400376912183,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.5095273733643586,
+      "sharpe_val": 0.6901925334727228,
+      "turnover_annual": 1.557102153708027,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.4853728931823038,
+      "sharpe_val": 0.6431522268188751,
+      "turnover_annual": 0.7056378110234353,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.5011762283065271,
+      "sharpe_val": 0.6817268432243961,
+      "turnover_annual": 0.9769731770376587,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.4705841386071545,
+      "sharpe_val": 0.6371021861775649,
+      "turnover_annual": 0.7485932187552825,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.4743287571928542,
+      "sharpe_val": 0.6453794886541224,
+      "turnover_annual": 1.0884416532533454,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.5058128883627963,
+      "sharpe_val": 0.6493827156163144,
+      "turnover_annual": 0.5683366641845906,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.5073864212942235,
+      "sharpe_val": 0.673876149629399,
+      "turnover_annual": 0.7704112384624221,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.4590678446838633,
+      "sharpe_val": 0.6379835381843757,
+      "turnover_annual": 0.5734245417357786,
+      "is_baseline": false
+    },
+    {
+      "instrument": "TLT",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.48193354545649547,
+      "sharpe_val": 0.6516299625865625,
+      "turnover_annual": 0.7656628463130815,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.2930385024360762,
+      "sharpe_val": 0.6334760574184933,
+      "turnover_annual": 2.95453028317997,
+      "is_baseline": true
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.2930385024360762,
+      "sharpe_val": 0.6334674874932529,
+      "turnover_annual": 2.955686806002745,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.3163528168931169,
+      "sharpe_val": 0.5258985734781154,
+      "turnover_annual": 1.5069923176776954,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.3161805872089148,
+      "sharpe_val": 0.5307672606525743,
+      "turnover_annual": 1.681956841218515,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.3148562845361116,
+      "sharpe_val": 0.5468575279900598,
+      "turnover_annual": 1.4241702099493125,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.3148562845361116,
+      "sharpe_val": 0.5468575279900598,
+      "turnover_annual": 1.4241702099493125,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.29811316524944176,
+      "sharpe_val": 0.4733145981393469,
+      "turnover_annual": 1.1336164538538458,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.29811316524944176,
+      "sharpe_val": 0.4733145981393469,
+      "turnover_annual": 1.1336164538538458,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.3321785188904897,
+      "sharpe_val": 0.3862883916753411,
+      "turnover_annual": 0.8176150547003852,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.3321785188904897,
+      "sharpe_val": 0.3862883916753411,
+      "turnover_annual": 0.8176150547003852,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.3130672255491938,
+      "sharpe_val": 0.6209189389266074,
+      "turnover_annual": 2.777357826228018,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.3130672255491938,
+      "sharpe_val": 0.6209189389266074,
+      "turnover_annual": 2.777357826228018,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.3025039070041777,
+      "sharpe_val": 0.6179318935894405,
+      "turnover_annual": 1.3822411873787284,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.3025039070041777,
+      "sharpe_val": 0.6179318935894405,
+      "turnover_annual": 1.3822411873787284,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.31992415460917967,
+      "sharpe_val": 0.48353879315153064,
+      "turnover_annual": 1.637802564369669,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.31992415460917967,
+      "sharpe_val": 0.48353879315153064,
+      "turnover_annual": 1.637802564369669,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.36873805722834646,
+      "sharpe_val": 0.5155416821048635,
+      "turnover_annual": 0.9799915917612461,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.36873805722834646,
+      "sharpe_val": 0.5155416821048635,
+      "turnover_annual": 0.9799915917612461,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.3304856713876056,
+      "sharpe_val": 0.4543883529393947,
+      "turnover_annual": 0.667817155392566,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.25,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.3304856713876056,
+      "sharpe_val": 0.4543883529393947,
+      "turnover_annual": 0.667817155392566,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.29283651873283445,
+      "sharpe_val": 0.6564247471698983,
+      "turnover_annual": 2.5610313377022225,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.29283651873283445,
+      "sharpe_val": 0.6564247471698983,
+      "turnover_annual": 2.5610313377022225,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.30298479153633273,
+      "sharpe_val": 0.5774580170512159,
+      "turnover_annual": 1.551720705999245,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.30298479153633273,
+      "sharpe_val": 0.5919566308502439,
+      "turnover_annual": 1.6384571458630834,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.3156319881503691,
+      "sharpe_val": 0.6100734597980781,
+      "turnover_annual": 1.2428467400806575,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.3156319881503691,
+      "sharpe_val": 0.6100734597980781,
+      "turnover_annual": 1.2428467400806575,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.3411470198255988,
+      "sharpe_val": 0.5108579513800563,
+      "turnover_annual": 1.0183077209642684,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.3411470198255988,
+      "sharpe_val": 0.5108579513800563,
+      "turnover_annual": 1.0183077209642684,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.3312178501311508,
+      "sharpe_val": 0.4682610256243012,
+      "turnover_annual": 0.6624577559055852,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.5,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.3312178501311508,
+      "sharpe_val": 0.4682610256243012,
+      "turnover_annual": 0.6624577559055852,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.29451522665117424,
+      "sharpe_val": 0.6143329018134422,
+      "turnover_annual": 2.8537392785026645,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.29451522665117424,
+      "sharpe_val": 0.6149265642355872,
+      "turnover_annual": 3.112300347736698,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.27239028012147964,
+      "sharpe_val": 0.5501929073618508,
+      "turnover_annual": 1.6998589318641397,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.27239028012147964,
+      "sharpe_val": 0.5642055968710815,
+      "turnover_annual": 1.7857333924303769,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.30230376476908594,
+      "sharpe_val": 0.5459584592912144,
+      "turnover_annual": 1.359460029939108,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.30230376476908594,
+      "sharpe_val": 0.5459584592912144,
+      "turnover_annual": 1.359460029939108,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.31012138846194437,
+      "sharpe_val": 0.49779110276964295,
+      "turnover_annual": 0.9286970669907082,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.31012138846194437,
+      "sharpe_val": 0.49779110276964295,
+      "turnover_annual": 0.9286970669907082,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.3297048047674406,
+      "sharpe_val": 0.4382224072900393,
+      "turnover_annual": 0.6674611964932631,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 0.75,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.3297048047674406,
+      "sharpe_val": 0.4382224072900393,
+      "turnover_annual": 0.6674611964932631,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.0,
+      "sharpe_train": 0.29804528414779335,
+      "sharpe_val": 0.6091191134118726,
+      "turnover_annual": 2.7944205317135493,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 1,
+      "cap": 1.5,
+      "sharpe_train": 0.29804528414779335,
+      "sharpe_val": 0.6091142585172524,
+      "turnover_annual": 2.7946600038703857,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.0,
+      "sharpe_train": 0.2515521743947533,
+      "sharpe_val": 0.5715298525205118,
+      "turnover_annual": 1.790646899213861,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 3,
+      "cap": 1.5,
+      "sharpe_train": 0.2515521743947533,
+      "sharpe_val": 0.5715298525205118,
+      "turnover_annual": 1.790646899213861,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.0,
+      "sharpe_train": 0.2859493948757287,
+      "sharpe_val": 0.5800227281824679,
+      "turnover_annual": 1.3264979625986015,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 5,
+      "cap": 1.5,
+      "sharpe_train": 0.2859493948757287,
+      "sharpe_val": 0.5800227281824679,
+      "turnover_annual": 1.3264979625986015,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.0,
+      "sharpe_train": 0.31543014005600895,
+      "sharpe_val": 0.4919967868289082,
+      "turnover_annual": 1.0759479351819776,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 10,
+      "cap": 1.5,
+      "sharpe_train": 0.31543014005600895,
+      "sharpe_val": 0.4919967868289082,
+      "turnover_annual": 1.0759479351819776,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.0,
+      "sharpe_train": 0.2777791804351971,
+      "sharpe_val": 0.46498468242767743,
+      "turnover_annual": 0.6787736326381141,
+      "is_baseline": false
+    },
+    {
+      "instrument": "IWM",
+      "lambda": 1.0,
+      "k": 20,
+      "cap": 1.5,
+      "sharpe_train": 0.2777791804351971,
+      "sharpe_val": 0.46498468242767743,
+      "turnover_annual": 0.6787736326381141,
+      "is_baseline": false
+    }
+  ],
+  "n_trials_total": 200,
+  "status": "FAILED_NULL",
+  "test_opened": false,
+  "preconditions": {
+    "cov_channel": true,
+    "not_reversal": true
+  }
+}

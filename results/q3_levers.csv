@@ -1,0 +1,5 @@
+lever,cost,mde_multiplier,mde_after_returns,does_not_fix
+shrink the search space (1268 -> 1),free,2.051053465097584,0.07955769803768824,"even a SINGLE pre-registered return hypothesis has MDE_IC = 0.0796, above every known return effect. The binding constraint is n, not K."
+"longer history (SPY from 1993, n x 1.65)","free, already used",1.284523257866513,0.06193558392226156,"0.0796 -> 0.0620, still above an IC of 0.05. And it adds no crises: 1993-2006 contributes one (2000-2002)."
+intraday data (nominally n x 390),free for 730 days only,,,"intraday autocorrelation and the U-shaped profile make the effective multiplier far below sqrt(390). For SIZING it gives nothing at all: the number of rebalancing episodes is set by the band, not by data frequency -- 82-331 levels, measured in M2."
+wide cross-section (500 names),paid point-in-time constituents,15.811388300841896,0.010320225468544034,survivorship bias without point-in-time membership; and it does not add a single crisis.

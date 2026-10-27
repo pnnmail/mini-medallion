@@ -1,0 +1,123 @@
+{
+  "verdict": "NO USEFUL IMPROVEMENT AS A GENERAL RESULT -- it survives in only 2/16 strategies, all on TLT",
+  "n_strategies": 16,
+  "n_strategies_passed": 5,
+  "n_incremental_models": 255,
+  "n_incremental_passed": 30,
+  "strategy_status_counts": {
+    "FAILED_CRISIS_DEPENDENCE": 8,
+    "PASSED": 5,
+    "FAILED_OOS": 3
+  },
+  "model_status_counts": {
+    "FAILED_NULL": 168,
+    "FAILED_OOS": 57,
+    "PASSED": 30
+  },
+  "advantage_gone_ex_all_crises": 12,
+  "vix_worsens_sizing_count": 4,
+  "episode_coverage": {
+    "SPY": {
+      "decline_leg_share_of_sample": 0.16618873826903025,
+      "peak_to_recovery_share_of_sample": 0.47249739311783107
+    },
+    "SCHD": {
+      "decline_leg_share_of_sample": 0.16790792146242384,
+      "peak_to_recovery_share_of_sample": 0.44414353419092756
+    },
+    "TLT": {
+      "decline_leg_share_of_sample": 0.26968238691049085,
+      "peak_to_recovery_share_of_sample": 0.7459095283926853
+    },
+    "IWM": {
+      "decline_leg_share_of_sample": 0.22252165543792107,
+      "peak_to_recovery_share_of_sample": 0.5282001924927815
+    }
+  },
+  "passed_candidates_by_family": {
+    "vix": 23,
+    "asymmetry": 7
+  },
+  "tlt_to_spy_verification": [
+    {
+      "target_instrument": "SPY",
+      "horizon": 1,
+      "split_name": "TRAIN",
+      "block": "cross_asset",
+      "family": "cross_asset_vol",
+      "candidate": "log_rv20_TLT",
+      "n_obs": 2780,
+      "beta_incremental": 0.1208108224648523,
+      "t_incremental": 1.3393378438188683,
+      "p_analytic": 0.1804607141156098,
+      "t_null_threshold_rw": 2.577310200588717,
+      "p_romano_wolf": 0.517,
+      "rw_rejected": false,
+      "null_max_t_p95_block": 2.577310200588717,
+      "baseline_r2_oos": 0.1363426843021818,
+      "model_r2_oos": 0.1526070845720725,
+      "delta_r2": 0.0016481663450542,
+      "qlike_baseline": -7.8130179972928255,
+      "qlike_model": -7.96153712902389,
+      "bh_rejected": false,
+      "p_bh_adjusted": 0.2912498867055728,
+      "beats_global_threshold": false,
+      "status": "FAILED_NULL"
+    },
+    {
+      "target_instrument": "SPY",
+      "horizon": 5,
+      "split_name": "TRAIN",
+      "block": "cross_asset",
+      "family": "cross_asset_vol",
+      "candidate": "log_rv20_TLT",
+      "n_obs": 2780,
+      "beta_incremental": 0.1353708201141721,
+      "t_incremental": 2.2170476013886127,
+      "p_analytic": 0.026619838870409,
+      "t_null_threshold_rw": 2.9802182626504483,
+      "p_romano_wolf": 0.247,
+      "rw_rejected": false,
+      "null_max_t_p95_block": 2.9802182626504483,
+      "baseline_r2_oos": 0.47473417960321,
+      "model_r2_oos": 0.5149969884941883,
+      "delta_r2": -0.0013913559220068,
+      "qlike_baseline": -8.14337653352054,
+      "qlike_model": -8.26792017469632,
+      "bh_rejected": true,
+      "p_bh_adjusted": 0.0617096264723119,
+      "beats_global_threshold": false,
+      "status": "FAILED_NULL"
+    },
+    {
+      "target_instrument": "SPY",
+      "horizon": 10,
+      "split_name": "TRAIN",
+      "block": "cross_asset",
+      "family": "cross_asset_vol",
+      "candidate": "log_rv20_TLT",
+      "n_obs": 2780,
+      "beta_incremental": 0.1417214770259813,
+      "t_incremental": 2.077759607784836,
+      "p_analytic": 0.0377315058401919,
+      "t_null_threshold_rw": 3.026267231409784,
+      "p_romano_wolf": 0.292,
+      "rw_rejected": false,
+      "null_max_t_p95_block": 3.026267231409784,
+      "baseline_r2_oos": 0.5442409955534184,
+      "model_r2_oos": 0.579765804663251,
+      "delta_r2": -0.0117263547550854,
+      "qlike_baseline": -8.097649473817379,
+      "qlike_model": -8.205951730528524,
+      "bh_rejected": true,
+      "p_bh_adjusted": 0.0822353332414439,
+      "beats_global_threshold": false,
+      "status": "FAILED_NULL"
+    }
+  ],
+  "cross_asset_family_train": {
+    "n": 51,
+    "n_rejected": 0,
+    "max_abs_t": 2.8158175287543776
+  }
+}
